@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="lg" type="dark">
       <b-navbar-brand href="#">
-        <nuxt-link to="/">نظام عنب</nuxt-link>
+        <nuxt-link to="/" class="active">نظام عنب</nuxt-link>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -19,16 +19,9 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="mr-auto">
-          <b-nav-form>
-            <b-form-input
-              size="sm"
-              class="mr-sm-2"
-              placeholder="Search"
-            ></b-form-input>
-            <b-button size="sm" class="my-2 my-sm-0" type="submit"
-              >Search</b-button
-            >
-          </b-nav-form>
+            <nuxt-link to="/download" class="btn btn-light r-2">
+                تحميل مجاناً
+            </nuxt-link>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -41,7 +34,7 @@ export default {};
 
 <style lang="scss" scoped>
 .navbar{
-    margin: 1.75rem;
+    margin: 1.75rem 1.75rem 0.75rem 1.75rem;
     border-radius: $r-2;
     background: $tb-2;
 }
