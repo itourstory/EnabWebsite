@@ -2,7 +2,6 @@
   <div>
     <Header />
     <Nuxt />
-    <Afq />
   </div>
 </template>
 
