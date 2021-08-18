@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <Header />
-    <Nuxt />
-    <Afq />
-  </div>
+  <div>Afq</div>
 </template>
 
 <script>
@@ -11,5 +7,4 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-//
 </style>
