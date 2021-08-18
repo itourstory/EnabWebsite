@@ -20,10 +20,10 @@ body{
 
 .main-container{
     background-color: $t-1 !important;
-    margin: 65px 45px 0px 35px !important;
-    min-height: calc(100vh - 6rem) !important;
-    max-height: calc(100vh - 6rem) !important;
-    border-radius: $border-radius-lg !important;
+    margin: 1.75rem !important;
+    // min-height: calc(100vh - 6rem) !important;
+    // max-height: calc(100vh - 6rem) !important;
+    border-radius: $r-2 !important;
     padding: $spacer * 1.75;
 }
 
@@ -179,4 +179,11 @@ input{
             }
         }
     }
+}
+a {
+    color: rgba(255, 255, 255, 0.5);
+}
+a:hover{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
 }
