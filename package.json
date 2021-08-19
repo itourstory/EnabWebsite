@@ -17,10 +17,12 @@
     "core-js": "^3.15.1",
     "node-sass": "4.14.1",
     "nuxt": "^2.15.7",
-    "sass-loader": "10.0.2",
+    "sass-loader": "^10.1.1",
     "vue-long-click": "^0.0.4",
     "vue-select": "^3.12.2",
     "vuejs-dialog": "^1.4.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/fontawesome": "^1.1.2"
+  }
 }

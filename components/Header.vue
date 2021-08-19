@@ -13,15 +13,16 @@
               <nuxt-link to="/" :class="{ 'active' : $nuxt.$route.path === '/'}">الصفحة الرئيسية</nuxt-link>
           </b-nav-item>
           <b-nav-item href="#">
+              <nuxt-link to="/download" :class="{ 'active' : $nuxt.$route.path === '/download'}">تحميل</nuxt-link>
+          </b-nav-item>
+          <b-nav-item href="#">
               <nuxt-link to="/faq" :class="{ 'active' : $nuxt.$route.path === '/faq'}">الأسئلة الشائعة</nuxt-link>
           </b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
-        <b-navbar-nav class="mr-auto">
-            <nuxt-link to="/download" class="btn btn-light r-2">
-                تحميل مجاناً
-            </nuxt-link>
+        <b-navbar-nav class="mr-auto text-light">
+            مجاناً
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -36,7 +37,7 @@ export default {};
 .navbar{
     margin: 1.75rem 1.75rem 0.75rem 1.75rem;
     border-radius: $r-2;
-    background: $tb-2;
+    background: $s-1; /*old color: $tb-2 */
 }
 .active{
     color: #fff;
