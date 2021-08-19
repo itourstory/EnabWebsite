@@ -1,5 +1,8 @@
 <template>
-  <div>Afq</div>
+  <div>
+    <FaqSearch />
+    <FaqBody />
+  </div>
 </template>
 
 <script>
