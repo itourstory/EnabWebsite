@@ -5,7 +5,7 @@
             كيف يمكن أن نساعد ؟
         </h2>
         <form>
-            <div class="form-group bg-neutral rounded-pill mb-0 px-2 py-2 shadow">
+            <div class="form-group bg-custom rounded-pill mb-0 p-3 shadow">
             <div class="row">
                 <div class="col">
                 <div class="input-group input-group-merge shadow-none">
@@ -35,17 +35,9 @@
                     <input
                     type="text"
                     class="form-control form-control-flush shadow-none"
-                    placeholder="البحث عن إجابات ..."
+                    placeholder="البحث ..."
                     />
                 </div>
-                </div>
-                <div class="col-auto">
-                <button
-                    type="button"
-                    class="btn btn-block btn-warning rounded-pill"
-                >
-                    بحث
-                </button>
                 </div>
             </div>
             </div>
@@ -59,4 +51,11 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.bg-custom{
+    background: #090117;
+    .form-control{
+        background: #ffffff00;
+        color: #fff;
+    }
+}
 </style>
