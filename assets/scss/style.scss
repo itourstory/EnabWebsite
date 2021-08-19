@@ -4,27 +4,27 @@ body{
 
     
     background: #4776E6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fcfcfc90, #fcfcfc90);  /* Chrome 10-25, Safari 5.1-6 */ /* old color:#5688ff,#4776E6 */
-    background: linear-gradient(to right, #fcfcfc90, #fcfcfc90); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /* old color:#5688ff,#4776E6 */
+    background: -webkit-linear-gradient(to right, #14062c, #14062c);  /* Chrome 10-25, Safari 5.1-6 */ /* old color:#5688ff,#4776E6 */
+    background: linear-gradient(to right, #14062c, #14062c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /* old color:#5688ff,#4776E6 */
 
 
 
     height: 100vh;
     margin: 0.1px !important;
     font-family: "Tajawal", sans-serif !important;
-	color: #23272e;
+	color: #9d8bbc;
     direction: rtl;
 
     // overflow: hidden; /* Hide scrollbars */
 }
 
 .main-container{
-    background-color: $t-2 !important;  /* old color: t-1 */
+    // background-color: $t-2 !important;  /* old color: t-1 */
     margin: 0px 1.75rem 0.75rem 1.75rem !important;
     // min-height: calc(100vh - 6rem) !important;
     // max-height: calc(100vh - 6rem) !important;
     border-radius: $r-2 !important;
-    padding: $spacer * 3;
+    padding: $spacer * 2;
 }
 
 
