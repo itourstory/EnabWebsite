@@ -1,3 +1,3 @@
 {
-    "terminal.integrated.automationShell.linux": ["-ExecutionPolicy", "Bypass"]
+    "terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"]
 }
