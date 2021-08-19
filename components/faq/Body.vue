@@ -9,7 +9,7 @@
             </b-card-header>
             <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
               <b-card-body>
-                <b-card-text>حسن حازم ياحلو</b-card-text>
+                <b-card-text>نظام عنب  </b-card-text>
               </b-card-body>
             </b-collapse>
           </b-card>
