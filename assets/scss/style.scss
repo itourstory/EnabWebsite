@@ -12,7 +12,7 @@ body{
     height: 100vh;
     margin: 0.1px !important;
     font-family: "Tajawal", sans-serif !important;
-	color: #8c96a7;
+	color: #23272e;
     direction: rtl;
 
     // overflow: hidden; /* Hide scrollbars */
@@ -20,11 +20,11 @@ body{
 
 .main-container{
     background-color: $t-1 !important;
-    margin: 1.75rem !important;
+    margin: 0px 1.75rem 0.75rem 1.75rem !important;
     // min-height: calc(100vh - 6rem) !important;
     // max-height: calc(100vh - 6rem) !important;
     border-radius: $r-2 !important;
-    padding: $spacer * 1.75;
+    padding: $spacer * 3;
 }
 
 

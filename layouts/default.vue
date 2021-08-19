@@ -1,14 +1,19 @@
 <template>
-  <div>
-    <Header />
-    <Nuxt />
-  </div>
+    <div>
+        <Header />
+        <div class="main-container text-right">
+            <Nuxt />
+        </div>
+        <Footer />
+    </div>
 </template>
 
 <script>
-export default {};
+    export default {
+        
+    }
 </script>
 
 <style lang="scss" scoped>
-//
+// 
 </style>
