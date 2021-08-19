@@ -1,6 +1,6 @@
 <template>
   <div>
-    hello Hi
+    <IndexLogo />
   </div>
 </template>
 

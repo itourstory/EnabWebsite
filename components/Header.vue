@@ -36,7 +36,7 @@ export default {};
 .navbar{
     margin: 1.75rem 1.75rem 0.75rem 1.75rem;
     border-radius: $r-2;
-    background: $tb-2;
+    background: $s-1; /*old color: $tb-2 */
 }
 .active{
     color: #fff;
