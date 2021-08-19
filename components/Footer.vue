@@ -16,7 +16,7 @@ export default {};
 .footer{
     margin: 0.75rem 1.75rem 0.75rem 1.75rem;
     border-radius: $r-2;
-    background: $sb-1; /* old color: $tb-1 */
+    background: $tb-1;
 }
 .active{
     color: #fff;
