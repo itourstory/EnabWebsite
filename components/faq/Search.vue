@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h2 class="mb-4 text-center text-white">
+        <div class="container">
+            <h2 class="mb-4 text-center text-white">
             كيف يمكن أن نساعد ؟
         </h2>
         <form>
@@ -49,6 +50,7 @@
             </div>
             </div>
         </form>
+        </div>
     </div>
 </template>
 
