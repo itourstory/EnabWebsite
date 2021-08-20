@@ -1,9 +1,9 @@
 <template>
-    <div class="row d-flex justify-content-center w-75 my-0 mx-auto px-5">
+    <div class="row mb-6">
         <div class="col-6">
             <!-- Heading -->
             <h1 class="display-4 text-white font-weight-bolder mb-4">
-                جميل  <strong class="d-block text-primary font-weight-bold h1"> في بساطته.</strong>
+                جميل  <strong class="d-block text-primary font-weight-bold h1"> في بساطته</strong>
             </h1>
             <!-- Text -->
             <p class="lead text-white opacity-8 ml-6">
@@ -11,9 +11,9 @@
             </p>
             <!-- Buttons -->
             <div class="mt-5">
-                <a href="https://pos.itourstory.com/">
-                    <button type="button" class="btn btn-light btn-lg r-2">
-                        الموقع الالكتروني
+                <a :href="lastRelease">
+                    <button type="button" class="btn btn-secondary btn-lg r-2 p-4 px-5">
+                        تحميل البرنامج مجاناً
                     </button>
                 </a>
             </div>
@@ -28,7 +28,11 @@
 
 <script>
     export default {
-        
+        computed: {
+            lastRelease () {
+                return this.$store.state.release.lastRelease;
+            },
+        },
     }
 </script>
 

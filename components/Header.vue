@@ -5,7 +5,7 @@
         <nuxt-link to="/" class="active brand-link">
           نظام عنب
         </nuxt-link>
-        <small class="badge badge-dark text-sm">تجريبي</small>
+        <small class="badge badge-primary text-sm">تجريبي</small>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -33,7 +33,7 @@
 
 <script>
 export default {
-   computed: {
+  computed: {
       lastRelease () {
         return this.$store.state.release.lastRelease;
       },
