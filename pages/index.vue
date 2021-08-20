@@ -1,8 +1,8 @@
 <template>
   <div>
     <IndexSectionsIntroduction />
-    <IndexSectionsFeatures class="mt-5" />
-    <IndexSectionsSupermarket class="mt-5" />
+    <IndexSectionsFeatures />
+    <IndexSectionsSupermarket />
   </div>
 </template>
 
