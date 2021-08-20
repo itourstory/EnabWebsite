@@ -37,6 +37,7 @@ export default {
     {src: '~/plugins/vuejs-dialog', mode: 'client'},
     {src: '~/plugins/vuejs-select.js', mode: 'client'},
     {src: '~/plugins/vue-long-click.js', mode: 'client'},
+    {src: '~/plugins/v-tooltip.js', mode: 'client'},
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
