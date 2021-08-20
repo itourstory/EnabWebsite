@@ -27,6 +27,9 @@ export default {
     '~/assets/scss/app.scss',
     'vuejs-dialog/dist/vuejs-dialog.min.css',
     'vue-select/dist/vue-select.css',
+    '~/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss',
+    '~/node_modules/@fortawesome/fontawesome-free/scss/regular.scss',
+    '~/node_modules/@fortawesome/fontawesome-free/scss/solid.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

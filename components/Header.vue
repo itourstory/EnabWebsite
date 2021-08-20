@@ -2,7 +2,10 @@
   <div>
     <b-navbar toggleable="lg" type="light">
       <b-navbar-brand href="#">
-        <nuxt-link to="/" class="active">نظام عنب</nuxt-link>
+        <nuxt-link to="/" class="active brand-link">
+          نظام عنب
+        </nuxt-link>
+        <small class="badge badge-dark text-sm">تجريبي</small>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -47,7 +50,8 @@ export default {
 .active{
     color: #e0e0e0;
 }
-a{
-  // color: rgb(160, 160, 160);
+
+.brand-link{
+  font-size: 34px !important;
 }
 </style>
