@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="row mt-7">
-            <div class="col-6 d-flex justify-content-center flex-column text-center">
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center flex-column text-center">
                 <div class="border border-lighter r-2 py-6">
                     <i class="fab fa-telegram fa-3x text-light"></i>
                     <h4 class="text-light mt-3">تواصل معنا</h4>
@@ -10,7 +10,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-6 d-flex justify-content-center flex-column text-center">
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center flex-column text-center">
                 <div class="border border-lighter r-2 py-6">
                     <i class="fab fa-instagram fa-3x text-light"></i>
                     <h4 class="text-light mt-3">أبقى على إطلاع</h4>

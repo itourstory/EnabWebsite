@@ -4,7 +4,7 @@
       <!-- Get Started -->
       <div class="col-lg-4 col-md-6 px-lg-4">
         <nuxt-link to="/support">
-          <div class="bg-primary rounded-pill p-3 d-flex hover-scale-110">
+          <div class="bg-primary m-3 rounded-pill p-3 d-flex hover-scale-110">
             <div class="icon icon-shape rounded-circle bg-dark text-white ml-4">
               <i class="fas fa-life-ring"></i>
             </div>
@@ -18,7 +18,7 @@
       <!-- Account & Profile -->
       <div class="col-lg-4 col-md-6 px-lg-4">
         <nuxt-link to="/support">
-          <div class="bg-primary rounded-pill p-3 d-flex hover-scale-110">
+          <div class="bg-primary m-3 rounded-pill p-3 d-flex hover-scale-110">
             <div class="icon icon-shape rounded-circle bg-dark text-white ml-4">
               <i class="fas fa-user"></i>
             </div>
@@ -32,7 +32,7 @@
       <!-- Privacy & Security -->
       <div class="col-lg-4 col-md-6 px-lg-4">
         <nuxt-link to="/support">
-          <div class="bg-primary rounded-pill p-3 d-flex hover-scale-110">
+          <div class="bg-primary m-3 rounded-pill p-3 d-flex hover-scale-110">
             <div class="icon icon-shape rounded-circle bg-dark text-white ml-4">
               <i class="fas fa-shield-alt"></i>
             </div>
@@ -43,12 +43,10 @@
           </div>
         </nuxt-link>
       </div>
-    </div>
-    <div class="row mx-lg-n4 mt-3">
       <!-- Services -->
       <div class="col-lg-4 col-md-6 px-lg-4">
         <nuxt-link to="/support">
-          <div class="bg-primary rounded-pill p-3 d-flex hover-scale-110">
+          <div class="bg-primary m-3 rounded-pill p-3 d-flex hover-scale-110">
             <div class="icon icon-shape rounded-circle bg-dark text-white ml-4">
               <i class="fas fa-cubes"></i>
             </div>
@@ -62,7 +60,7 @@
       <!-- Payments -->
       <div class="col-lg-4 col-md-6 px-lg-4">
         <nuxt-link to="/support">
-          <div class="bg-primary rounded-pill p-3 d-flex hover-scale-110">
+          <div class="bg-primary m-3 rounded-pill p-3 d-flex hover-scale-110">
             <div class="icon icon-shape rounded-circle bg-dark text-white ml-4">
               <i class="fas fa-money-bill-alt"></i>
             </div>
@@ -76,7 +74,7 @@
       <!-- Technical Issues -->
       <div class="col-lg-4 col-md-6 px-lg-4">
         <nuxt-link to="/support">
-          <div class="bg-primary rounded-pill p-3 d-flex hover-scale-110">
+          <div class="bg-primary m-3 rounded-pill p-3 d-flex hover-scale-110">
             <div class="icon icon-shape rounded-circle bg-dark text-white ml-4">
               <i class="fas fa-exclamation-triangle"></i>
             </div>
