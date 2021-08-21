@@ -80,7 +80,7 @@
                 c5.679-24.395,25.372-41.877,48.586-45.918c-31.354-5.403-61.858,14.532-69.164,45.918c-7.577,32.552,12.668,65.083,45.22,72.661
                 c8.157,1.899,16.312,2.049,24.074,0.698C136.533,381.161,135.368,380.935,134.202,380.664z"
       />
-      <circle class="supermarket" cx="233.25" cy="181.426" r="60.52" @click="supermarket()" @mouseover="supermarket_state(true)" @mouseout="supermarket_state(false)"/>
+      <circle class="supermarket" cx="233.25" cy="181.426" r="60.52" @click="supermarket()" @mouseover="services_state('supermarket')" @mouseout="services_state('')"/>
       <path
         style="fill: #462e7a"
         d="M240.132,240.368c-32.552-7.577-52.798-40.109-45.22-72.661
@@ -122,7 +122,7 @@
                 c-31.155-5.424-61.49,14.374-68.749,45.56c-7.521,32.309,12.574,64.597,44.883,72.118c8.124,1.891,16.245,2.033,23.973,0.677
                 C237.96,343.574,236.837,343.354,235.714,343.092z"
       />
-      <circle style="fill: #aa8dd8" cx="322.73" cy="324.056" r="60.06" />
+      <circle class="coffee" cx="322.73" cy="324.056" r="60.06" @mouseover="services_state('coffee')" @mouseout="services_state('')"/>
       <path
         style="fill: #987fc9"
         d="M329.456,382.553c-32.309-7.521-52.404-39.809-44.883-72.118c5.63-24.185,25.138-41.523,48.144-45.56
@@ -154,8 +154,9 @@ export default {
         supermarket(){
             console.log("clicked")
         },
-        supermarket_state(state){
+        services_state(state){
             this.$emit('service-state',state)
+            console.log(state)
         }
     }
 };
@@ -177,5 +178,15 @@ export default {
         background-color: black;
         position: absolute;
         top: 0;
+    }
+    .coffee{
+      fill:#aa8dd8;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .coffee:hover{
+        fill: #b086e7 !important;
+        pointer-events: all;
+        filter: drop-shadow(0px 0px 15px #b297e0);
     }
 </style>
