@@ -2,29 +2,48 @@
   <div>
     <b-navbar toggleable="lg" type="light">
       <b-navbar-brand href="#">
-        <nuxt-link to="/" class="active brand-link">
-          نظام عنب
+        <nuxt-link to="/" class="active brand-link position-relative">
+          <b>نظام عنب</b>
+        <small class="badge badge-secondary text-sm position-absolute" style="top: -15px; right: 0;">تجريبي</small>
         </nuxt-link>
-        <small class="badge badge-primary text-sm">تجريبي</small>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">
-              <nuxt-link to="/" :class="{ 'active' : $nuxt.$route.path === '/'}">الصفحة الرئيسية</nuxt-link>
+          <b-nav-item to="/" :class="{ 'active' : $nuxt.$route.path === '/'}">
+            الصفحة الرئيسية
           </b-nav-item>
-          <b-nav-item href="#">
-              <nuxt-link to="/faq" :class="{ 'active' : $nuxt.$route.path === '/faq'}">الأسئلة الشائعة</nuxt-link>
+          <b-nav-item to="/faq" :class="{ 'active' : $nuxt.$route.path === '/faq'}">
+              الأسئلة الشائعة
           </b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="mr-auto text-light">
-            <a :href="lastRelease" class="text-light">
-              <b>تحميل</b>
-            </a>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link pl-0" :href="lastRelease" v-if="!($nuxt.$route.path === '/')">
+                  <b>تحميل</b>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/itourstory/EnabApp" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/webpxs" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/webpixels" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -54,4 +73,5 @@ export default {
 .brand-link{
   font-size: 34px !important;
 }
+
 </style>
