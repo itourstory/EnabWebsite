@@ -1,8 +1,7 @@
 <template>
   <div>
-    <div class="container">
-      <h2 class="mb-4 text-center text-white">كيف يمكن أن نساعد ؟</h2>
-      <form>
+    <div>
+      <h2 class="mb-4 text-center text-white">كيف يمكننا مساعدتك ؟</h2>
         <div class="form-group bg-custom rounded-pill mb-0 p-3 shadow">
           <div class="row">
             <div class="col">
@@ -29,18 +28,35 @@
                   type="text"
                   class="form-control form-control-flush shadow-none"
                   placeholder="البحث ..."
+                  v-model="searchText" 
+                  @change="getSearch()"
                 />
               </div>
             </div>
           </div>
         </div>
-      </form>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { mapMutations } from 'vuex'
+
+export default {
+  data(){
+    return {
+      searchText: ''
+    }
+  },
+  methods: {
+    ...mapMutations({
+      storeSearch: 'support/search/setSearchText'
+    }),
+    getSearch(){
+      this.storeSearch(this.searchText)
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>

@@ -2,7 +2,7 @@
   <div>
     <Header />
     <div class="main-container text-right">
-      <Nuxt class="d-flex justify-content-center mx-auto flex-column w-75"/>
+      <Nuxt class="d-flex justify-content-center mx-auto flex-column content"/>
     </div>
     <div id="top-shadow"></div>
     <Footer />

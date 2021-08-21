@@ -1,6 +1,6 @@
 <template>
     <div class="row mb-6">
-        <div class="col-6 mt-5">
+        <div class="col-lg-6 col-sm-12 mt-5">
             <!-- Main Section -->
             <div v-if="section==''">
                 <!-- Heading -->
@@ -8,7 +8,7 @@
                     عنب
                 </h1>
                 <!-- Text -->
-                <p class="lead text-white opacity-8 ml-6">
+                <p class="lead text-white opacity-8">
                     مثل العنكود اكثر من حبة بعنكود واحد ,  عنبنه اكثر من خدمة بنظام واحد 
                 </p>
                 <!-- Buttons -->
@@ -26,12 +26,12 @@
                     سوبرماركت
                 </h1>
                 <!-- Text -->
-                <p class="lead text-white opacity-8 ml-6">
+                <p class="lead text-white opacity-8">
                     مثل العنكود اكثر من حبة بعنكود واحد ,  عنبنه اكثر من خدمة بنظام واحد 
                 </p>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-sm-12">
             <div class="image text-left">
                 <IndexUtilitiesEnab @service-state="supermarketState($event)"/>
             </div>

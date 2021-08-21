@@ -11,6 +11,7 @@ $hover: #00000026;
 $text-muted: #ffffff63;
 
 $dark: #0f0f0f6e;
+$lighter: rgba(56, 27, 107, 1);
 
 //Navs
 $nav-tabs-link-active-color: $primary;
@@ -34,6 +35,8 @@ $sb-1: $t-4;
 .t-3{background: $t-3 !important;backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);}
 .s-1{background: $s-1 !important;backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);}
 .sb-1{background: $sb-1 !important;backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);}
+.bg-lighter{background: $lighter !important;}
+.border-lighter{border-color: $lighter !important;}
 .t-1 label, .t-2 label, .t-3 label{
     color: $dark
 }
