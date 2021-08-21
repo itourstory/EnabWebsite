@@ -9,7 +9,6 @@
             <i class="fas fa-box-open fa-3x text-light"></i>
             <h4 class="text-light mt-3">متعدد الخدمات</h4>
             <span class="text-muted">مدري شنو</span>
-
         </div>
         <div class="col-3 d-flex justify-content-center flex-column text-center">
             <i class="fas fa-bolt fa-3x text-light"></i>
