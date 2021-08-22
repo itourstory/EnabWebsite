@@ -3,7 +3,7 @@
     <div class="row mx-lg-n4">
       <!-- Get Started -->
       <div class="col-lg-4 col-md-6 px-lg-4">
-        <nuxt-link to="/support">
+        <nuxt-link to="/support/categories/start">
           <div class="bg-primary m-3 rounded-pill p-3 d-flex hover-scale-110">
             <div class="icon icon-shape rounded-circle bg-dark text-white ml-4">
               <i class="fas fa-life-ring"></i>
