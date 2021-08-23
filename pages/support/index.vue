@@ -3,7 +3,7 @@
     <SupportSearchInput />
     <SupportSearchResult v-if="searchText" :search_text="searchText" />
     <div v-else>
-      <SupportCategories :categories= "categories"/>
+      <SupportCategories :category= "categories"/>
       <SupportContact />
     </div>
   </div>
