@@ -15,7 +15,7 @@ export default {
 
     async getLastRelease({ commit, state, dispatch }) {
         if (state.releases.length <= 0)
-            await dispatch('fetchReleases')
+            await dispatch('fetchReleases') 
         
         let link = await state.releases[0].assets.find((x) => x.browser_download_url.endsWith('.exe')).browser_download_url
         commit('lastRelease', link)
