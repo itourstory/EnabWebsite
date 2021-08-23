@@ -101,7 +101,7 @@ export default {
               {"icon": "fas fa-user",},
               {"icon": "fas fa-life-ring",}
               
-            ]
+            ] 
           }
         },
     async fetch() {
