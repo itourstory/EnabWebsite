@@ -4,39 +4,20 @@
       <div class="col-12 mx-auto">
         <div id="accordion-1" class="accordion accordion-spaced">
           <b-card no-body class="mb-1">
-            <b-card-header
-              v-b-toggle.accordion-1
-              header-tag="header"
-              class="card-header py-3 collapsed"
-              role="tab"
-            >
+            <b-card-header v-b-toggle.accordion-1 header-tag="header" class="card-header py-3 collapsed" role="tab">
               <div block class="text-right mr-4">حل المشاكل</div>
             </b-card-header>
-            <b-collapse
-              id="accordion-1"
-              visible
-              accordion="my-accordion"
-              role="tabpanel"
-            >
+            <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
               <b-card-body>
                 <b-card-text>نظام عنب </b-card-text>
               </b-card-body>
             </b-collapse>
           </b-card>
           <b-card no-body class="mb-1">
-            <b-card-header
-              v-b-toggle.accordion-2
-              header-tag="header"
-              class="card-header py-3 collapsed"
-              role="tab"
-            >
+            <b-card-header v-b-toggle.accordion-2 header-tag="header" class="card-header py-3 collapsed" role="tab">
               <div block class="text-right mr-4">اخرى</div>
             </b-card-header>
-            <b-collapse
-              id="accordion-2"
-              accordion="my-accordion"
-              role="tabpanel"
-            >
+            <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
               <b-card-body>
                 <b-card-text>text</b-card-text>
               </b-card-body>
