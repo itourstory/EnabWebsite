@@ -96,9 +96,14 @@ export default {
         // ],
         data() {
           return {
-            categories: []
-      }
-    },
+            categories: [
+              {"icon": "fas fa-life-ring",},
+              {"icon": "fas fa-user",},
+              {"icon": "fas fa-life-ring",}
+              
+            ]
+          }
+        },
     async fetch() {
       this.categories = await fetch(
         'http://127.0.0.1:8000/api/support/tag'
