@@ -48,6 +48,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // https://go.nuxtjs.dev/pwa
+    '@nuxtjs/pwa',
   ],
   
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -57,8 +59,7 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    
 
   ],
 
@@ -67,8 +68,11 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    icon: false, // disables the icon module
     manifest: {
-      lang: 'en'
+      name: 'Enab App',
+      lang: 'en',
+      useWebmanifestExtension: false,
     }
   },
 
