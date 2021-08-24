@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <SupportSearchInput />
-    <SupportSearchResult v-if="searchText" :search_text="searchText" />
+    <SupportSearchResult v-if="searchText !== ''" :searchText="searchText" :questions="questions"  />
     <div v-else>
-      <SupportCategories :categories="categories"/>
-      <SupportSearchResult :questions="questions" />
+      <SupportCategories @clicked="getId($event)" :categories="categories"/>
+      <SupportSearchResult :questions="questions" :resault="resault" />
       <SupportContact />
     </div>
   </div>
@@ -26,7 +26,7 @@ import { mapMutations, mapGetters, mapActions, mapState } from 'vuex'
     },
     data() {
       return {
-        clicked: false,
+        resault: 0
       }
     },
     created(){
@@ -38,6 +38,9 @@ import { mapMutations, mapGetters, mapActions, mapState } from 'vuex'
             fetchCategories: 'support/categories/fetchCategories',
             fetchQuestions: 'support/questions/fetchQuestions',
         }),
+        getId(category_id){
+          this.resault = category_id
+        }
     },
   };
 </script>
