@@ -4,6 +4,7 @@
     <SupportSearchResult v-if="searchText" :search_text="searchText" />
     <div v-else>
       <SupportCategories :categories="categories"/>
+      <SupportSearchResult :questions="questions" />
       <SupportContact />
     </div>
   </div>
@@ -18,6 +19,9 @@ import { mapMutations, mapGetters, mapActions, mapState } from 'vuex'
       },
       categories(){
         return this.$store.state.support.categories.categories
+      },
+      questions(){
+        return this.$store.state.support.questions.questions
       }
     },
     data() {
@@ -27,10 +31,12 @@ import { mapMutations, mapGetters, mapActions, mapState } from 'vuex'
     },
     created(){
       this.fetchCategories()
+      this.fetchQuestions()
     },
     methods: {
         ...mapActions({
             fetchCategories: 'support/categories/fetchCategories',
+            fetchQuestions: 'support/questions/fetchQuestions',
         }),
     },
   };

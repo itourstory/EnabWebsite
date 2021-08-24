@@ -13,13 +13,13 @@
               </b-card-body>
             </b-collapse>
           </b-card>
-          <b-card no-body class="mb-1">
+          <b-card v-for="question in questions" :key="question.id" no-body class="mb-1">
             <b-card-header v-b-toggle.accordion-2 header-tag="header" class="card-header py-3 collapsed" role="tab">
-              <div block class="text-right mr-4">اخرى</div>
+              <div block class="text-right mr-4">{{question.title}}</div>
             </b-card-header>
             <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
               <b-card-body>
-                <b-card-text>text</b-card-text>
+                <b-card-text>{{question.body}}</b-card-text>
               </b-card-body>
             </b-collapse>
           </b-card>
@@ -31,7 +31,10 @@
 
 <script>
 export default {
-  props: ["search_text"],
+  props: [
+    "search_text",
+    "questions",
+  ],
 };
 </script>
 
