@@ -3,21 +3,20 @@ export default {
         this.$auth.$storage.setLocalStorage('categories', state.categories)
     },
 
-    async fetchcategories({commit, dispatch}) {
+    async fetchCategories({commit, dispatch}) {
         var categories = await this.$auth.$storage.getLocalStorage('categories')
         if (categories === null) // If not set on the storage
-            await this.$axios   
-                .get('http://127.0.0.1:8000/api/support/tag')
+            await this.$axios
+                .get('/support/tag')
                 .then(async (response) => {
                     // Send to Mutations
-                    commit('set_all', response.data);
+                    commit('set_categories', response.data);
                     //Save To Storage
                     this.$auth.$storage.setLocalStorage('categories', response.data)
                 }).catch(error => {
                     throw new Error(`${error}`);
                 })
         else
-            commit('set_all', categories); // Send to Mutations
-        
+            commit('set_categories', categories); // Send to Mutations
     },
 }
