@@ -3,7 +3,7 @@
     <SupportSearchInput />
     <SupportSearchResult v-if="searchText" :search_text="searchText" />
     <div v-else>
-      <SupportCategories :category= "categories"/>
+      <SupportCategories :categories="categories"/>
       <SupportContact />
     </div>
   </div>
@@ -17,16 +17,21 @@ import { mapMutations, mapGetters, mapActions, mapState } from 'vuex'
         return this.$store.state.support.search.searchText;
       },
       categories(){
-                return this.$store.state.categories 
-      },
+        return this.$store.state.support.categories.categories
+      }
+    },
+    data() {
+      return {
+        clicked: false,
+      }
+    },
+    created(){
+      this.fetchCategories()
     },
     methods: {
         ...mapActions({
-            fetchcategories: 'categories/fetchCategories',
+            fetchCategories: 'support/categories/fetchCategories',
         }),
-    },
-    created(){
-        this.fetchcategories()
     },
   };
 </script>
