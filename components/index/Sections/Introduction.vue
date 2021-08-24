@@ -12,7 +12,7 @@
                 <div class="mt-5">
                     <a :href="lastRelease">
                         <button type="button" class="btn btn-secondary btn-lg r-2 p-4 px-5">
-                            2تحميل البرنامج مجاناً
+                            تحميل البرنامج مجاناً
                         </button>
                     </a>
                 </div>
