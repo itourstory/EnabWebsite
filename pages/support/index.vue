@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <SupportSearchInput />
-    <SupportSearchResult :searchText="searchText" :questions="questions"  />
-    <div>
+    <SupportSearchResult v-if="searchText !== ''" :searchText="searchText" :questions="questions"  />
+    <div v-else>
       <SupportCategories @clicked="getId($event)" :categories="categories"/>
       <SupportSearchResult :questions="questions" :resault="resault" />
       <SupportContact />
