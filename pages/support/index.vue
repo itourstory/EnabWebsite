@@ -7,6 +7,7 @@
       <SupportSearchResult :questions="questions" :resault="resault" />
       <SupportContact />
     </div>
+    <!-- <button @click="dd()">dd</button> -->
   </div>
 </template>
 
@@ -40,6 +41,9 @@ import { mapMutations, mapGetters, mapActions, mapState } from 'vuex'
         }),
         getId(category_id){
           this.resault = category_id
+        },
+        dd(){
+          console.log(this.questions)
         }
     },
   };
