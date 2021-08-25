@@ -9,7 +9,7 @@
             </div>
             <div>
               <span class="h5 text-light">{{category.name}}</span>
-              <p class="text-sm text-muted mb-0">{{category.descr}}</p>
+              <p class="text-sm text-muted mb-0">{{category.description}}</p>
             </div>
           </div>
         </div>
