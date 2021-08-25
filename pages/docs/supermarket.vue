@@ -2,10 +2,10 @@
     <div>
         <div class="row">
             <div class="col-lg-3">
-                <DocSidebar />
+                <DocSupermarketSidebar />
             </div>
             <div class="col-lg-9">
-                <DocContentIntroduction />
+                <DocSupermarketContent />
             </div>
         </div>
     </div>

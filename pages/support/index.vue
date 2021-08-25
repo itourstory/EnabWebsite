@@ -1,12 +1,13 @@
 <template>
   <div class="container">
     <SupportSearchInput />
-    <SupportSearchResult v-if="searchText !== ''" :searchText="searchText" :questions="questions"  />
-    <div v-else>
+    <SupportSearchResult :searchText="searchText" :questions="questions"  />
+    <div>
       <SupportCategories @clicked="getId($event)" :categories="categories"/>
       <SupportSearchResult :questions="questions" :resault="resault" />
       <SupportContact />
     </div>
+    <!-- <button @click="dd()">dd</button> -->
   </div>
 </template>
 
@@ -40,6 +41,9 @@ import { mapMutations, mapGetters, mapActions, mapState } from 'vuex'
         }),
         getId(category_id){
           this.resault = category_id
+        },
+        dd(){
+          console.log(this.questions)
         }
     },
   };

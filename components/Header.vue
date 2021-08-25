@@ -20,8 +20,8 @@
             الصفحة الرئيسية
           </b-nav-item>
           <b-nav-item
-            to="/doc"
-            :class="{ active: $nuxt.$route.path === '/doc' }"
+            to="/docs"
+            :class="{ active: $nuxt.$route.path === '/docs' }"
           >
             دليل الاستخدام
           </b-nav-item>
