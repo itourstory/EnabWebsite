@@ -23,7 +23,7 @@
             to="/docs"
             :class="{ active: $nuxt.$route.path === '/docs' }"
           >
-            دليل الاستخدام
+            الخدمات
           </b-nav-item>
           <b-nav-item
             to="/support"

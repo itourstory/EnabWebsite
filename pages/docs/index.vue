@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="text-light text-center">This is main documentation page</h1>
+        <Doc/>
     </div>
 </template>
 
