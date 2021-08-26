@@ -28,7 +28,7 @@
             <div class="row mt-7">
                 <div class="col-md-6 col-sm-12 d-flex justify-content-center flex-column text-center">
                     <nuxt-link to="/docs/supermarket">
-                        <div class="border border-lighter rounded-pill hover-scale-110">
+                        <div class="border border-lighter rounded-pill hover-scale-110  bg-primary">
                             <div class="alert alert-modern border-light mx-2 rounded-pill w-75 mt-2">
                                 <span class="alert-content text-light h6">مجانا 🔥🔥</span>
                             </div>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-md-6 col-sm-12 d-flex justify-content-center flex-column text-center">
                     <nuxt-link to="/docs">
-                        <div class="border border-lighter rounded-pill hover-scale-110">
+                        <div class="border border-lighter rounded-pill hover-scale-110  bg-primary">
                             <div class="alert alert-modern border-light mx-2 rounded-pill w-75 mt-2">
                                 <span class="alert-content text-light h6">مجانا 🔥🔥</span>
                             </div>
@@ -48,17 +48,6 @@
                         </div>
                     </nuxt-link>
                 </div>
-                <!-- <div class="col-md-4 col-sm-12 d-flex justify-content-center flex-column text-center">
-                    <nuxt-link to="/docs">
-                        <div class="border border-lighter rounded-pill hover-scale-110">
-                            <div class="alert alert-modern border-light mx-2 rounded-pill w-75 mt-2">
-                                <span class="alert-content text-light h6">مجانا 🔥🔥</span>
-                            </div>
-                            <br>
-                            <h4 class="text-light mt-3">قريبا...</h4>
-                        </div>
-                    </nuxt-link>
-                </div> -->
             </div>
         </div>
     </div>
