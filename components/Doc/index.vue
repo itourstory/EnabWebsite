@@ -4,7 +4,7 @@
             <h1 class="text-light">الخدمات</h1>
             <h5 class="text-light text-right">لدينا العديد من الخدمات التي نوفرها لك مجانا</h5>
             <div class="row mt-4">
-                <div class="col-lg-6 col-md-12 px-lg-6">
+                <div class="col-lg-6">
                     <!-- Card -->
                     <nuxt-link to="/docs/supermarket">
                         <div class="card mb-5 hover-translate-y-n10">
@@ -25,7 +25,7 @@
                         </div>
                     </nuxt-link>
                 </div>
-                <div class="col-lg-6 col-md-12 px-lg-6">
+                <div class="col-lg-6">
                     <!-- Card -->
                     <nuxt-link to="/docs">
                         <div class="card mb-5 hover-translate-y-n10">
@@ -36,7 +36,7 @@
                                 <div class="pl-3 text-primary">
                                     <h5>قريبا...</h5>
                                     <p class="pb-5">
-                                        هنلك خدمات مجانية اخرى قادكة 🔥🔥.
+                                        هنلك خدمات مجانية اخرى قادمة 🔥🔥.
                                     </p>
                                 </div>
                             </div>

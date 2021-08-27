@@ -14,7 +14,7 @@
                 <div class="border border-lighter r-2 py-6">
                     <i class="fab fa-instagram fa-3x text-light"></i>
                     <h4 class="text-light mt-3">أبقى على إطلاع</h4>
-                    <a class="btn btn-secondary mt-3 hover-scale-110" href="https://instagram/EnabApp" dir="ltr">
+                    <a class="btn btn-secondary mt-3 hover-scale-110" href="https://www.instagram.com/enab_app/" dir="ltr">
                         @EnabApp
                     </a>
                 </div>
