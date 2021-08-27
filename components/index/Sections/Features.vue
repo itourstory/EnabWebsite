@@ -1,6 +1,6 @@
 <template>
     <div class="row features my-6">
-        <div class="feature col-md-3 col-sm-12 d-flex justify-content-center flex-column text-center">
+        <div class="feature col-md-3 col-sm-12 d-flex justify-content-center flex-column text-center" >
             <i class="fas fa-signal fa-3x text-light"></i>
             <h4 class="text-light mt-3">مع أو بدون أنترنت</h4>
             <span class="text-muted">يمكنك إكمال العمل في حال انقطاع الانترنت</span>

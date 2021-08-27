@@ -1,50 +1,48 @@
 <template>
     <div>
         <div class="container">
-            <h2 class="text-light">الخدمات</h2>
+            <h1 class="text-light">الخدمات</h1>
             <h5 class="text-light text-right">لدينا العديد من الخدمات التي نوفرها لك مجانا</h5>
-            <!-- <div class="row">
-                <div class="col-lg-3 col-md-6 px-lg-4">
-                    <div class="bg-primary justify-content-center m-3 rounded-pill p-3 d-flex hover-scale-110 pb-5">
-                        <span class="h5 text-light mt-4">سوبرماركت</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 px-lg-4">
-                    <div class="bg-primary justify-content-center m-3 rounded-pill p-3 d-flex hover-scale-110 pb-5">
-                        <span class="h5 text-light mt-4">Soon...</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 px-lg-4">
-                    <div class="bg-primary justify-content-center m-3 rounded-pill p-3 d-flex hover-scale-110 pb-5">
-                        <span class="h5 text-light mt-4">Soon...</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 px-lg-4">
-                    <div class="bg-primary justify-content-center m-3 rounded-pill p-3 d-flex hover-scale-110 pb-5">
-                        <span class="h5 text-light mt-4">Soon...</span>
-                    </div>
-                </div>
-            </div> -->
-            <div class="row mt-7">
-                <div class="col-md-6 col-sm-12 d-flex justify-content-center flex-column text-center">
+            <div class="row mt-4">
+                <div class="col-lg-6 col-md-12 px-lg-6">
+                    <!-- Card -->
                     <nuxt-link to="/docs/supermarket">
-                        <div class="border border-lighter rounded-pill hover-scale-110  bg-primary">
-                            <div class="alert alert-modern border-light mx-2 rounded-pill w-75 mt-2">
-                                <span class="alert-content text-light h6">مجانا 🔥🔥</span>
+                        <div class="card mb-5 hover-translate-y-n10">
+                            <div class="d-flex p-4">
+                                <div>
+                                    <span class="badge badge-primary badge-pill ml-3">مجاناً</span>
+                                </div>
+                                <div class="pl-3 text-primary">
+                                    <h3>السوبرماركت</h3>
+                                    <p>
+                                        نظام كاشير و ادارة منتجات وزبائن مع العديد من الخدمات الاخرى في مكان واحد.
+                                    </p>
+                                </div>
                             </div>
-                            <br>
-                            <h4 class="text-light mt-3">سوبرماركت</h4>
+                            <div>
+                                <img src="/images/supermarket.svg" class="img-fluid"/>
+                            </div>
                         </div>
                     </nuxt-link>
                 </div>
-                <div class="col-md-6 col-sm-12 d-flex justify-content-center flex-column text-center">
+                <div class="col-lg-6 col-md-12 px-lg-6">
+                    <!-- Card -->
                     <nuxt-link to="/docs">
-                        <div class="border border-lighter rounded-pill hover-scale-110  bg-primary">
-                            <div class="alert alert-modern border-light mx-2 rounded-pill w-75 mt-2">
-                                <span class="alert-content text-light h6">مجانا 🔥🔥</span>
+                        <div class="card mb-5 hover-translate-y-n10">
+                            <div class="d-flex p-4">
+                                <div>
+                                    <span class="badge badge-primary badge-pill ml-3">مجاناً</span>
+                                </div>
+                                <div class="pl-3 text-primary">
+                                    <h5>قريبا...</h5>
+                                    <p class="pb-5">
+                                        هنلك خدمات مجانية اخرى قادكة 🔥🔥.
+                                    </p>
+                                </div>
                             </div>
-                            <br>
-                            <h4 class="text-light mt-3">قريبا...</h4>
+                            <div>
+                                <img src="/images/supermarket.svg" class="img-fluid img-center" style="width: 900px;" />
+                            </div>
                         </div>
                     </nuxt-link>
                 </div>
