@@ -5,7 +5,7 @@
             <h5 class="text-light text-right">لدينا العديد من الخدمات التي نوفرها لك مجانا</h5>
             <div class="row mt-4">
                 <div class="col-lg-6">
-                    <!-- Card -->
+                    <!-- Cardd -->
                     <nuxt-link to="/docs/supermarket">
                         <div class="card mb-5 hover-translate-y-n10">
                             <div class="d-flex p-4">
