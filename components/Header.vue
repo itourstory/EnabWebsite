@@ -20,10 +20,16 @@
             الصفحة الرئيسية
           </b-nav-item>
           <b-nav-item
+            to="/services"
+            :class="{ active: $nuxt.$route.path === '/services' }"
+          >
+            الخدمات
+          </b-nav-item>
+          <b-nav-item
             to="/docs"
             :class="{ active: $nuxt.$route.path === '/docs' }"
           >
-            الخدمات
+            دليل الاستخدام
           </b-nav-item>
           <b-nav-item
             to="/support"

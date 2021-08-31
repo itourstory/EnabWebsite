@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="container">
-            <h1 class="text-light">دليل الاستخدام</h1>
-            <h5 class="text-light text-right">يمكنك معرفة طريقة استخدام خدماتنا</h5>
+            <h1 class="text-light">الخدمات</h1>
+            <h5 class="text-light text-right">لدينا العديد من الخدمات التي نوفرها لك مجانا</h5>
             <div class="row mt-4">
                 <div class="col-lg-6">
                     <!-- Card -->
@@ -12,7 +12,7 @@
                                 <div>
                                     <span class="badge badge-primary badge-pill ml-3">مجاناً</span>
                                 </div>
-                                <div class="pl-3 text-primary">
+                                <div class="pl-3 text-primary text-light">
                                     <h3 class="text-light">السوبرماركت</h3>
                                     <p>
                                         نظام كاشير و ادارة منتجات وزبائن مع العديد من الخدمات الاخرى في مكان واحد.
@@ -33,7 +33,7 @@
                                 <div>
                                     <span class="badge badge-primary badge-pill ml-3">مجاناً</span>
                                 </div>
-                                <div class="pl-3 text-primary">
+                                <div class="pl-3 text-primary text-light">
                                     <h3 class="text-light">قريبا...</h3>
                                     <p class="pb-5">
                                         هنلك خدمات مجانية اخرى قادمة 🔥🔥.
