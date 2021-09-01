@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Doc/>
+        <Services/>
     </div>
 </template>
 

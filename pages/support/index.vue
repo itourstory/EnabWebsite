@@ -46,6 +46,17 @@ import { mapMutations, mapGetters, mapActions, mapState } from 'vuex'
           console.log(this.questions)
         }
     },
+    computed: {
+      resultQuery(){
+        if(this.searchQuery){
+        return this.resources.filter((item)=>{
+          return this.searchQuery.toLowerCase().split(' ').every(v => item.title.toLowerCase().includes(v))
+        })
+        }else{
+          return this.resources;
+        }
+      }
+    }
   };
 </script>
 
