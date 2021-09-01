@@ -10,7 +10,7 @@
                         <div class="card mb-5 hover-translate-y-n10">
                             <div class="d-flex p-4">
                                 <div>
-                                    <span class="badge badge-primary badge-pill ml-3">مجاناً</span>
+                                    <span class="badge badge-primary badge-pill ml-3">مجاناً 🔥</span>
                                 </div>
                                 <div class="pl-3 text-primary text-light">
                                     <h3 class="text-light">السوبرماركت</h3>
@@ -28,15 +28,16 @@
                 <div class="col-lg-6">
                     <!-- Card -->
                     <nuxt-link to="/docs">
-                        <div class="card mb-3 hover-translate-y-n10">
+                        <div class="card mb-2 hover-translate-y-n10">
                             <div class="d-flex p-4">
                                 <div>
-                                    <span class="badge badge-primary badge-pill ml-3">مجاناً</span>
+                                    <span class="badge badge-primary badge-pill ml-3">مجاناً 🔥</span>
                                 </div>
                                 <div class="pl-3 text-primary text-light">
                                     <h3 class="text-light">قريبا...</h3>
-                                    <p class="pb-5">
+                                    <p>
                                         هنلك خدمات مجانية اخرى قادمة 🔥🔥.
+                                        انتظرونا
                                     </p>
                                 </div>
                             </div>

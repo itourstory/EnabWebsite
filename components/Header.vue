@@ -25,12 +25,24 @@
           >
             الخدمات
           </b-nav-item>
-          <b-nav-item
-            to="/docs"
-            :class="{ active: $nuxt.$route.path === '/docs' }"
-          >
-            دليل الاستخدام
-          </b-nav-item>
+          <!-- Dropdown item -->
+          <div class="dropdown">
+            <!-- Item -->
+            <b-nav-item
+              data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false"
+              :class="{ active: $nuxt.$route.path === '/docs' }"
+            >
+              دليل الاستخدام
+            </b-nav-item>
+            <!-- Dropdown items -->
+            <div class="dropdown-menu dropdown-bg">
+              <b-nav-item to="/docs/supermarket" class="px-0 text-right pr-3">
+                <h6 class="text-light">للسوبرماركت</h6>
+              </b-nav-item>
+            </div>
+          </div>
           <b-nav-item
             to="/support"
             :class="{ active: $nuxt.$route.path === '/support' }"
@@ -107,5 +119,12 @@ export default {
 
 .brand-link {
   font-size: 34px !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-bg{
+  background-color: $secondary;
 }
 </style>
