@@ -6,7 +6,7 @@
             <div class="row mt-4">
                 <div class="col-lg-6">
                     <!-- Card -->
-                    <nuxt-link to="/docs/supermarket">
+                    <nuxt-link to="/services/supermarket">
                         <div class="card mb-5 hover-translate-y-n10">
                             <div class="d-flex p-4">
                                 <div>
