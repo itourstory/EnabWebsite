@@ -2,12 +2,12 @@
     <div>
         <div class="container">
             <div class="col-12 col-lg-12 pr-lg-5 text-center">
-                <h1 class="display-4 w-100 text-white font-weight-bolder mb-4">
+                <h1 class="display-3 w-100 text-white font-weight-bolder mb-4">
                     احصل على النظام الان <strong class="d-block text-primary font-weight-bold h1">مجاناً.</strong>
                 </h1>
             </div>
-            <div class="row col-lg-12 mt-6">
-                <div class="col-lg-12 text-center mb-3">
+            <div class="row">
+                <div class="col-lg-4 text-right mb-4">
                     <span class="text-light">
                         <i class="fas fa-check-square ml-3"></i>املئ الحقول التالية بالمعلومات * يجب التأكد من صحة معلوماتك اولا
                     </span>
@@ -20,19 +20,19 @@
                         <i class="fas fa-check-square ml-3"></i>حمل النظام وقم بتنصيبه وبعدها يمكنك تسجيل الدخول عن طريق المعرف و كلمة المرور الخاصة بك
                     </span>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-8">
                     <div class="card p-3">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label">الاسم الكامل</label>
-                                    <input class="form-control" type="text" placeholder="الاسم الكامل">
+                                    <input class="form-control input-color text-light" type="text" placeholder="الاسم الكامل">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label">البريد الالكتروني</label>
-                                    <input class="form-control" type="email" placeholder="name@exmaple.com">
+                                    <input class="form-control input-color text-light" type="email" placeholder="name@exmaple.com">
                                 </div>
                             </div>
                         </div>
@@ -40,13 +40,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label">رقم الهاتف</label>
-                                    <input type="text" class="form-control" data-mask="0000 000 000" placeholder="رقم الهاتف">
+                                    <input type="text" class="form-control input-color text-light" data-mask="0000 000 000" placeholder="رقم الهاتف">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label">الخدمة</label>
-                                    <select class="custom-select ">
+                                    <select class="custom-select input-color text-light">
                                         <option disabled selected>اختر الخدمة التي ترغب بها</option>
                                         <option value="1">سوبرماركت</option>
                                     </select>
@@ -57,13 +57,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label">المدريشنو</label>
-                                    <input class="form-control" type="email" placeholder="name@exmaple.com">
+                                    <input class="form-control input-color text-light" type="email" placeholder="name@exmaple.com">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="form-control-label">رقم الهاتف</label>
-                                    <input class="form-control" type="text" placeholder="+40-777 245 549">
+                                    <input class="form-control input-color text-light" type="text" placeholder="+40-777 245 549">
                                 </div>
                             </div>
                         </div>
@@ -85,5 +85,8 @@
 .card{
     background-color: $secondary;
     border-radius: $r-3;
+}
+.input-color{
+    background-color: #7f3ef0;
 }
 </style>
