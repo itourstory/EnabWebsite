@@ -44,7 +44,9 @@ $sb-1: $t-4;
 // Rounded
 $r-1: .375rem;
 $r-2: $r-1*2;
+$r-3: $r-2*2;
 .r-1{border-radius: $r-1 !important;}
 .r-2{border-radius: $r-2 !important;}
+.r-3{border-radius: $r-3 !important;}
 
 
