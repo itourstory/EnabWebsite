@@ -3,6 +3,7 @@
     <IndexSectionsIntroduction />
     <IndexSectionsFeatures />
     <IndexSectionsSupermarket />
+    <IndexSectionsLocation />
   </div>
 </template>
 

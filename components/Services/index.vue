@@ -1,8 +1,5 @@
 <template>
     <div>
-        <div class="w-25">
-            <img src="/images/supermarket.svg" class="img-fluid"/>
-        </div>
         <div class="container">
             <div class="col-12 col-lg-12 pr-lg-5 text-center">
                 <h1 class="display-4 w-100 text-white font-weight-bolder mb-4">
