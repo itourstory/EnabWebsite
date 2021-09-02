@@ -26,10 +26,10 @@
             الخدمات
           </b-nav-item>
           <b-nav-item
-            to="/services"
-            :class="{ active: $nuxt.$route.path === '/services' }"
+            to="/services/subscribe"
+            :class="{ active: $nuxt.$route.path === '/services/subscribe' }"
           >
-            طلب خدمة
+            اشترك مجانا
           </b-nav-item>
           <!-- Dropdown item -->
           <b-nav-item-dropdown text="دليل الاستخدام" right>
