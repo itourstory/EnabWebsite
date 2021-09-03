@@ -8,7 +8,7 @@
             </div>
             <div class="row">
                 <!-- Roles -->
-                <div class="col-lg-4 text-right mb-4">
+                <div class="col-lg-12 text-right mb-4">
                     <span class="text-light">
                         <i class="fas fa-check-square ml-3"></i>املئ الحقول التالية بالمعلومات * يجب التأكد من صحة معلوماتك اولا
                     </span>
@@ -22,7 +22,7 @@
                     </span>
                 </div>
                 <!-- form -->
-                <div class="col-lg-8">
+                <!-- <div class="col-lg-8">
                     <div class="card p-3">
                         <div class="row">
                             <div class="col-md-6">
@@ -71,57 +71,102 @@
                         </div>
                         <b-button block class="p-3 mt-3 text-light" variant="outline-primary" >اشترك</b-button>
                     </div>
-                </div>
-                <div class="col-lg-12">
+                </div> -->
+                <div class="col-lg-8 mx-auto">
                     <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-                        <!-- email -->
+                        <!-- full name -->
                         <b-form-group
                             id="input-group-1"
-                            label="البريد الالكتروني :"
+                            label="الاسم الكامل :"
                             label-for="input-1"
                         >
                             <b-form-input
                             id="input-1"
+                            v-model="form.name"
+                            type="text"
+                            placeholder="ادخل اسمك الكامل"
+                            required
+                            class="r-3 text-black"
+                            ></b-form-input>
+                        </b-form-group>
+                        <!-- email -->
+                        <b-form-group
+                            id="input-group-2"
+                            label="البريد الالكتروني :"
+                            label-for="input-2"
+                        >
+                            <b-form-input
+                            id="input-2"
                             v-model="form.email"
                             type="email"
                             placeholder="example@gmail.com"
                             required
-                            class="r-3 text-left bg-wigt"
+                            class="r-3 text-left text-black"
                             ></b-form-input>
                         </b-form-group>
-
-                        <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+                        <!-- phone number -->
+                        <b-form-group 
+                            id="input-group-3" 
+                            label="رقم الهاتف:" 
+                            label-for="input-3"
+                        >
                             <b-form-input
-                            id="input-2"
-                            v-model="form.name"
-                            placeholder="Enter name"
+                            id="input-3"
+                            type="tel"
+                            data-mask="0000 000 000"
+                            v-model="form.phoneNumber"
+                            placeholder="0000 000 000"
                             required
+                            class="r-3 text-left text-black"
                             ></b-form-input>
                         </b-form-group>
-
-                        <b-form-group id="input-group-3" label="Food:" label-for="input-3">
-                            <b-form-select
+                        <!-- location -->
+                        <b-form-group 
+                            id="input-group-3" 
+                            label="موقع متجرك:" 
+                            label-for="input-3"
+                        >
+                            <b-form-input
                             id="input-3"
-                            v-model="form.food"
-                            :options="foods"
+                            type="locaion"
+                            data-mask="0000 000 000"
+                            v-model="form.location"
+                            placeholder="0000 000 000"
                             required
+                            class="r-3 text-left text-black"
+                            ></b-form-input>
+                        </b-form-group>
+                        <!-- Services -->
+                        <b-form-group 
+                            id="input-group-4" 
+                            label="الخدمات:" 
+                            label-for="input-4"
+                        >
+                            <b-form-select
+                            id="input-4"
+                            v-model="form.service"
+                            :options="services"
+                            required
+                            class="r-3 text-left text-black"
                             ></b-form-select>
                         </b-form-group>
 
-                        <b-form-group id="input-group-4" v-slot="{ ariaDescribedby }">
+                        <b-form-group 
+                            id="input-group-5" 
+                            v-slot="{ ariaDescribedby }"
+                        >
                             <b-form-checkbox-group
                             v-model="form.checked"
-                            id="checkboxes-4"
+                            id="checkboxes-5"
                             :aria-describedby="ariaDescribedby"
                             >
-                            <b-form-checkbox value="me">Check me out</b-form-checkbox>
-                            <b-form-checkbox value="that">Check that out</b-form-checkbox>
+                            <b-form-checkbox value="true">اوافق على سياسات الخصوصية</b-form-checkbox>
                             </b-form-checkbox-group>
                         </b-form-group>
 
-                        <b-button type="submit" variant="primary">Submit</b-button>
+                        <b-button block type="submit" variant="primary" class="mb-3" >طلب</b-button>
                         <b-button type="reset" variant="danger">Reset</b-button>
-                        </b-form>
+                    </b-form>
                 </div>
             </div>
         </div>
@@ -135,10 +180,11 @@
         form: {
           email: '',
           name: '',
-          food: null,
+          phoneNumber: null ,
+          service: null,
           checked: []
         },
-        foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
+        services: [{ text: 'اختر الخدمة التي ترغب بها', value: null }, 'سوبرماركت'],
         show: true
       }
     },
@@ -152,7 +198,8 @@
         // Reset our form values
         this.form.email = ''
         this.form.name = ''
-        this.form.food = null
+        this.form.phoneNumber = null
+        this.form.service = null
         this.form.checked = []
         // Trick to reset/clear native browser form validation state
         this.show = false
@@ -168,8 +215,5 @@
 .card{
     background-color: $secondary;
     border-radius: $r-3;
-}
-.input-color{
-    background-color: #7f3ef0;
 }
 </style>
