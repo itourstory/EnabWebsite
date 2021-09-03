@@ -3,7 +3,7 @@
         <div class="container">
             <div class="col-12 col-lg-12 pr-lg-5 text-center">
                 <h1 class="display-4 w-100 text-white font-weight-bolder mb-4">
-                    العديد من الخدمات التي نوفرها <strong class="d-block text-primary font-weight-bold h1">لك مجاناً.</strong>
+                    العديد من الخدمات التي نوفرها <strong class="d-block text-primary font-weight-bold h1">لك مجاناً</strong>
                 </h1>
             </div>
             <!-- <h1 class="text-light">الخدمات</h1>

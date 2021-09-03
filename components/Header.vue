@@ -29,7 +29,7 @@
             to="/services/subscribe"
             :class="{ active: $nuxt.$route.path === '/services/subscribe' }"
           >
-            اشترك مجانا
+            طلب اشتراك
           </b-nav-item>
           <!-- Dropdown item -->
           <b-nav-item-dropdown text="دليل الاستخدام" right>
