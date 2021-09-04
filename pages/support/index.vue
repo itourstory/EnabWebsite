@@ -1,10 +1,13 @@
 <template>
   <div class="container">
     <SupportSearchInput />
-    <SupportSearchResult v-if="searchText !== ''" :searchText="searchText" :questions="questions"  />
+    <SupportSearchResult
+      v-if="searchText !== ''"
+      :searchText="searchText"
+      :questions="questions"
+    />
     <div v-else>
-      <SupportCategories @clicked="getId($event)" :categories="categories"/>
-      <SupportSearchResult :questions="questions" :resault="resault" />
+      <SupportCategories :categories="categories" />
       <SupportContact />
     </div>
     <!-- <button @click="dd()">dd</button> -->
@@ -12,52 +15,44 @@
 </template>
 
 <script>
-import { mapMutations, mapGetters, mapActions, mapState } from 'vuex'
-  export default {
-    computed: {
-      searchText() {
-        return this.$store.state.support.search.searchText;
-      },
-      categories(){
-        return this.$store.state.support.categories.categories
-      },
-      questions(){
-        return this.$store.state.support.questions.questions
-      }
+import { mapMutations, mapGetters, mapActions, mapState } from "vuex";
+export default {
+  computed: {
+    searchText() {
+      let search = this.$store.state.support.search.searchText;
+      this.$store.dispatch('support/questions/search', search)
+      return search;
     },
-    data() {
-      return {
-        resault: 0
-      }
+    categories() {
+      return this.$store.state.support.categories.categories;
     },
-    created(){
-      this.fetchCategories()
-      this.fetchQuestions()
+    questions() {
+      return this.$store.state.support.questions.questions;
     },
-    methods: {
-        ...mapActions({
-            fetchCategories: 'support/categories/fetchCategories',
-            fetchQuestions: 'support/questions/fetchQuestions',
-        }),
-        getId(category_id){
-          this.resault = category_id
-        },
-        dd(){
-          console.log(this.questions)
-        }
+  },
+  data() {
+    return {
+      resault: 0,
+    };
+  },
+  created() {
+    this.fetchCategories();
+    this.fetchQuestions();
+  },
+  methods: {
+    ...mapActions({
+      fetchCategories: "support/categories/fetchCategories",
+      fetchQuestions: "support/questions/fetchQuestions",
+      search: "support/questions/search"
+    }),
+    getId(category_id) {
+      this.resault = category_id;
     },
-    computed: {
-      resultQuery(){
-        if(this.searchQuery){
-        return this.resources.filter((item)=>{
-          return this.searchQuery.toLowerCase().split(' ').every(v => item.title.toLowerCase().includes(v))
-        })
-        }else{
-          return this.resources;
-        }
-      }
-    }
-  };
+    dd() {
+      console.log(this.questions);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -14,7 +14,7 @@
             </b-collapse>
           </b-card>
           <div v-for="question in questions" :key="question.id">
-            <b-card v-if="searchText === question.title" no-body class="mb-1">
+            <b-card no-body class="mb-1">
               <b-card-header v-b-toggle.name header-tag="header" class="card-header py-3 collapsed" role="tab">
                 <div block class="text-right mr-4">{{question.title}}</div>
               </b-card-header>

@@ -1,7 +1,8 @@
 <template>
     <div>
-        <!-- <img src="/images/hero.svg" class="img-fluid"/> -->
-        <Services/>
+        <div class="text-light">
+            Location card
+        </div>
     </div>
 </template>
 

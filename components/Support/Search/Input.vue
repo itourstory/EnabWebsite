@@ -29,7 +29,6 @@
                   class="form-control form-control-flush shadow-none"
                   placeholder="البحث ..."
                   v-model="searchText" 
-                  @change="getSearch()"
                 />
               </div>
             </div>
@@ -52,7 +51,9 @@ export default {
     ...mapMutations({
       storeSearch: 'support/search/setSearchText'
     }),
-    getSearch(){
+  },
+  watch: {
+    searchText(){
       this.storeSearch(this.searchText)
     }
   }
