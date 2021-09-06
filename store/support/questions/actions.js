@@ -7,7 +7,7 @@ export default {
         var questions = await this.$auth.$storage.getLocalStorage('questions')
         if (questions === null) // If not set on the storage
             await this.$axios
-                .get('/support/question')
+                .get('/support/questions')
                 .then(async (response) => {
                     // Send to Mutations
                     commit('set_questions', response.data);

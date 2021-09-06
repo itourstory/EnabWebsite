@@ -27,8 +27,8 @@
                 <input
                   type="text"
                   class="form-control form-control-flush shadow-none"
-                  placeholder="البحث ..."
-                  v-model="searchText" 
+                  placeholder="اوصف المشكلة"
+                  v-model="searchText"
                 />
               </div>
             </div>
