@@ -19,12 +19,12 @@
           <b-nav-item to="/" :class="{ active: $nuxt.$route.path === '/' }">
             الصفحة الرئيسية
           </b-nav-item>
-          <b-nav-item
+          <!-- <b-nav-item
             to="/services"
             :class="{ active: $nuxt.$route.path === '/services' }"
           >
             الخدمات
-          </b-nav-item>
+          </b-nav-item> -->
           <b-nav-item
             to="/services/subscribe"
             :class="{ active: $nuxt.$route.path === '/services/subscribe' }"

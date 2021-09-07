@@ -1,8 +1,11 @@
 <template>
   <div>
     <div class="footer py-3 mt-5">
-        <div class="row d-flex justify-content-center">
-            <span class="text-center">جميع الحقوق محفوظة © عنب</span>
+        <div class="row">
+            <span class="mx-auto">جميع الحقوق محفوظة © عنب</span>
+        </div>
+        <div class="row">
+            <nuxt-link to="/privacy" class="mx-auto">*سياسة الخصوصية وبنود الخدمة</nuxt-link>
         </div>
     </div>
   </div>
