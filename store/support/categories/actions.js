@@ -7,7 +7,7 @@ export default {
         var categories = await this.$auth.$storage.getLocalStorage('categories')
         if (categories === null) // If not set on the storage
             await this.$axios
-                .get('/support/tag')
+                .get('/support/tags')
                 .then(async (response) => {
                     // Send to Mutations
                     commit('set_categories', response.data);
