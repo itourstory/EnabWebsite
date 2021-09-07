@@ -1,6 +1,7 @@
 <template>
     <div>
         <div class="container">
+            <!-- first section -->
             <div class="col px-0">
                 <div class="row row-grid align-items-center">
                     <div class="col-lg-6 text-center text-lg-left">
@@ -25,7 +26,7 @@
                                         <div class="row justify-content-between align-items-center">
                                             <div class="col">
                                                 <span class="text-light">
-                                                    <i class="fas fa-check-square ml-3"></i>اقرأ <nuxt-link to="/">سياسة الخصوصية وبنود الخدمة</nuxt-link> الخاصة بنا ثم املئ الحقول التالية بالمعلومات * يجب التأكد من صحة معلوماتك اولا 
+                                                    <i class="fas fa-check-square ml-3"></i>اقرأ <nuxt-link to="/privacy">سياسة الخصوصية وبنود الخدمة</nuxt-link> الخاصة بنا ثم املئ الحقول التالية بالمعلومات * يجب التأكد من صحة معلوماتك اولا 
                                                 </span>
                                             </div>
                                         </div>
@@ -60,11 +61,12 @@
                     </div>
                 </div>
             </div>
+            <!-- form -->
             <div class="col px-0">
                 <div class="row">
                     <!-- form -->
                     <div class="col-lg-8 mx-auto">
-                        <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+                        <b-form @submit="onSubmit" v-if="show">
                             <!-- full name -->
                             <b-form-group
                                 id="input-group-1"
@@ -115,7 +117,7 @@
                                 ></b-form-input>
                             </b-form-group>
                             <!-- location -->
-                            <b-form-group 
+                            <!-- <b-form-group 
                                 label="موقع متجرلك:" 
                                 class="mb-3 text-light"
                             >
@@ -132,6 +134,21 @@
                                         <b-button variant="light" class="rl">موقعك الحالي</b-button>
                                     </b-input-group-append>
                                 </b-input-group>
+                            </b-form-group> -->
+                            <b-form-group 
+                                label="موقع متجرلك:" 
+                                class="mb-3 text-light"
+                            >
+                                <b-input-group 
+                                    dir="ltr"
+                                >
+                                    <b-form-input 
+                                        class="rl text-right" 
+                                        placeholder="موقع متجرلك" 
+                                        required
+                                        v-model="form.location"
+                                    ></b-form-input>
+                                </b-input-group>
                             </b-form-group>
                             <!-- Services -->
                             <b-form-group 
@@ -142,7 +159,7 @@
                             >
                                 <b-form-select
                                 id="input-4"
-                                v-model="form.service"
+                                v-model="form.services"
                                 :options="services"
                                 required
                                 class="r-3"
@@ -155,15 +172,15 @@
                                 class="mb-3"
                             >
                                 <b-form-checkbox-group
-                                v-model="form.checked"
+                                v-model="form.privacy"
                                 required
                                 id="checkboxes-5"
                                 :aria-describedby="ariaDescribedby"
                                 > 
-                                <b-form-checkbox value="yes">اوافق على <nuxt-link to="/">سياسة الخصوصية وبنود الخدمة</nuxt-link></b-form-checkbox>
+                                <b-form-checkbox value="yes">اوافق على <nuxt-link to="/privacy">سياسة الخصوصية وبنود الخدمة</nuxt-link></b-form-checkbox>
                                 </b-form-checkbox-group>
                             </b-form-group>
-                            <b-button block type="submit" variant="primary" class="mb-3" >طلب</b-button>
+                            <b-button block type="submit" variant="primary" class="mb-3 r-3" >ارسال الطلب</b-button>
                             <!-- <b-button type="reset" variant="danger">Reset</b-button> -->
                         </b-form>
                     </div>
@@ -183,7 +200,7 @@
           location:'',
           phoneNumber: null ,
           services: null,
-          checked: []
+          privacy: []
         },
         services: [
             { value: '', text: 'اختر الخدمة التي ترغب بها', disabled: true },

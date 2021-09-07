@@ -19,12 +19,12 @@
           <b-nav-item to="/" :class="{ active: $nuxt.$route.path === '/' }">
             الصفحة الرئيسية
           </b-nav-item>
-          <b-nav-item
+          <!-- <b-nav-item
             to="/services"
             :class="{ active: $nuxt.$route.path === '/services' }"
           >
             الخدمات
-          </b-nav-item>
+          </b-nav-item> -->
           <b-nav-item
             to="/services/subscribe"
             :class="{ active: $nuxt.$route.path === '/services/subscribe' }"
@@ -32,9 +32,9 @@
             طلب اشتراك
           </b-nav-item>
           <!-- Dropdown item -->
-          <b-nav-item-dropdown text="دليل الاستخدام" right>
+          <!-- <b-nav-item-dropdown text="دليل الاستخدام" right>
             <b-dropdown-item class="text-right text-light" to="/docs/supermarket">للسوبرماركت</b-dropdown-item>
-          </b-nav-item-dropdown>
+          </b-nav-item-dropdown> -->
           <b-nav-item
             to="/support"
             :class="{ active: $nuxt.$route.path === '/support' }"

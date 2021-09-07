@@ -29,7 +29,7 @@ export default {
       return ['fas fa-life-ring' , 'fas fa-user' , 'fas fa-shield-alt','fas fa-cubes','fas fa-money-bill-alt','fas fa-exclamation-triangle']
     },
     pagesLinks(){
-      return ['/support','/support','/support','/docs/supermarket','/support','/support'] //page number 4 for category number 4 => Services page (/docs)
+      return ['/support','/support','/support','/services/supermarket','/support','/support'] //page number 4 for category number 4 => Services page (/docs)
     }
   },
   methods:{
