@@ -31,7 +31,7 @@
                 <div class="col-lg-6">
                     <!-- Card -->
                     <div class="card mb-2 hover-translate-y-n10">
-                        <nuxt-link to="/docs">
+                        <nuxt-link to="/">
                             <div class="d-flex p-4">
                                 <div class="pl-3 text-primary text-light">
                                     <h3 class="text-light">قريبا...</h3>
