@@ -15,7 +15,7 @@
                             تحميل البرنامج مجاناً
                         </button>
                     </a>
-                </div>
+                </div>  
             </div>
             <!-- Supermarket Section -->
             <div v-else-if="section=='supermarket'">
@@ -82,7 +82,5 @@
 </script>
 
 <style lang="scss" scoped>
-    .btn{
 
-    }
 </style>
