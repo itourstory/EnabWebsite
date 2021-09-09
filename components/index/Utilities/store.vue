@@ -428,5 +428,8 @@
 </script>
 
 <style lang="scss" scoped>
-
+.door{
+  transform: perspective(1200px) rotateY(40deg) translateX(-10%);
+  transition: .45s;
+}
 </style>
