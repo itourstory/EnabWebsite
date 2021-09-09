@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                             <div>
-                                <img src="/images/supermarket.svg" class="img-fluid"/>
+                                <img src="/images/supermarket.svg" class="img-fluid" style="width: 900px;" />
                             </div>
                         </nuxt-link>
                     </div>
@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div>
-                                <img src="/images/supermarket.svg" class="img-fluid img-center" style="width: 900px;" />
+                                <img src="/images/soon.svg" class="img-fluid img-center" style="width: 900px;" />
                             </div>
                         </nuxt-link>
                     </div>
