@@ -4,5 +4,8 @@ export default {
     },
     set_clicked(state,service){
         state.clickedService=service
-    }
+    },
+    set_services(state, services){
+        state.services = services
+    },
 }

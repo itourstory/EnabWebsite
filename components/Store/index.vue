@@ -5,10 +5,24 @@
                 <h2 class="text-light">متجر الخدمات</h2>
             </b-col>
             <b-col sm="6">
-                <b-form-input type="search" class="r-3" placeholder="اكتب اسم الخدمة"></b-form-input>
+                <StoreSearchInput />
             </b-col>
         </b-row>
-        <b-badge pill variant="primary" class="m-3">عدد الخدمات {{services.length}}</b-badge>
+        <b-row class="my-1">
+            <b-col sm="6">
+                <b-badge pill variant="primary" class="m-3">عدد الخدمات {{services.length}}</b-badge>
+            </b-col>
+            <b-col sm="6">
+                <!-- Modal button -->
+                <div class="text-light" v-b-modal.modal-1>
+                    <i class="fas fa-question-circle"></i> ما هو نظام النقاط 
+                </div>
+                <!-- Modal body -->
+                <b-modal id="modal-1" title="نظام النقاط">
+                    <p class="my-4">شرح نظام النقاط</p>
+                </b-modal>
+            </b-col>
+        </b-row>
         <div class="row pt-0">
             <div v-for="service in services" :key="service.id" class="col-md-4 col-sm-12 d-flex justify-content-center flex-column text-center mb-3 mt-3 hover-translate-y-n10">
                 <div class="border border-lighter r-2 py-6">
