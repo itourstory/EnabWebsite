@@ -6,16 +6,18 @@
                     <i :class="service.icon" class="fa-3x text-light"></i>
                     <h4 class="text-light mt-3">{{service.title}}</h4>
                     <h6 v-if="service.points == 0" class="text-light mt-3">مجانا 🤩</h6>
-                    <h6 v-else class="text-light mt-3">{{service.points}}</h6>
-                    <a class="btn btn-secondary mt-3 hover-scale-110" @click="clickedService(service.id)" v-b-modal.modal-lg variant="primary" dir="ltr">
+                    <h6 v-else class="text-light mt-3">{{service.points}} نقطة</h6>
+                    <a class="btn btn-secondary mt-3 hover-scale-110" v-b-modal="serviceId(service.id)" variant="primary">
                         عرض التفاصيل
                     </a>
                 </div>
+                <b-modal :id="'modal'+ service.id" class="text-right" size="lg" :title="service.title">
+                    <p class="text-right">
+                        {{service.subtitle}}
+                    </p>
+                </b-modal>
             </div>
         </div>
-        <b-modal id="modal-lg" class="text-right" size="lg" title="اسم الخدمة">
-            يييي
-        </b-modal>
     </div>
 </template>
 
@@ -25,7 +27,12 @@
             "searchText",
             "services",
             "resault",
-        ]
+        ],
+        methods:{
+            serviceId(id){
+                return 'modal' + id;
+            }
+        }
     }
 </script>
 

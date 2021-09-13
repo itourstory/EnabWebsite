@@ -16,14 +16,14 @@ export default {
     },
 
     async search({commit}, text){
-        var services = await this.$axios
-                        .get('/services')
-                        .then(async (response) => {
-                            // Send to Mutations
-                            commit('set', response.data);
-                        }).catch(error => {
-                            throw new Error(`${error}`);
-                        })
+        var services = '';
+        await this.$axios
+            .get('/services')
+            .then(async (response) => {
+                services = response.data;
+            }).catch(error => {
+                throw new Error(`${error}`);
+            })
 
         if (text)
         services = services.filter(item => {
