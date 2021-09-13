@@ -1,29 +1,66 @@
 <template>
     <div>
-        <h2 class="text-light">متجر الخدمات</h2>
-        <div class="container border border-lighter r-3 px-4">
-            <b-badge pill variant="primary" class="m-3">عدد الخدمات 10</b-badge>
-            <div class="row pt-0 show-scroll" style="max-height: 400px;">
-                <div v-for="index in 10" :key="index" class="col-md-4 col-sm-12 d-flex justify-content-center flex-column text-center mb-3 mt-3 hover-translate-y-n10">
-                    <div class="border border-lighter r-2 py-6">
-                        <i class="fas fa-calculator fa-3x text-light"></i>
-                        <h4 class="text-light mt-3">الحاسبة</h4>
-                        <a class="btn btn-secondary mt-3 hover-scale-110" href="#" dir="ltr">
-                            عرض التفاصيل
-                        </a>
-                    </div>
+        <b-row class="my-1">
+            <b-col sm="6">
+                <h2 class="text-light">متجر الخدمات</h2>
+            </b-col>
+            <b-col sm="6">
+                <StoreSearchInput />
+            </b-col>
+        </b-row>
+        <b-row class="my-1">
+            <b-col sm="6">
+                <b-badge pill variant="primary" class="m-3">عدد الخدمات {{services.length}}</b-badge>
+            </b-col>
+            <b-col sm="6">
+                <!-- Modal button -->
+                <div class="text-light" v-b-modal.modal-1>
+                    <i class="fas fa-question-circle"></i> ما هو نظام النقاط 
+                </div>
+                <!-- Modal body -->
+                <b-modal id="modal-1" title="نظام النقاط">
+                    <p class="my-4">شرح نظام النقاط</p>
+                </b-modal>
+            </b-col>
+        </b-row>
+        <div class="row pt-0">
+            <div v-for="service in services" :key="service.id" class="col-md-4 col-sm-12 d-flex justify-content-center flex-column text-center mb-3 mt-3 hover-translate-y-n10">
+                <div class="border border-lighter r-2 py-6">
+                    <i :class="service.icon" class="fa-3x text-light"></i>
+                    <h4 class="text-light mt-3">{{service.title}}</h4>
+                    <h6 v-if="service.points == 0" class="text-light mt-3">مجانا 🤩</h6>
+                    <h6 v-else class="text-light mt-3">{{service.points}}</h6>
+                    <a class="btn btn-secondary mt-3 hover-scale-110" @click="clickedService(service.id)" v-b-modal.modal-lg variant="primary" dir="ltr">
+                        عرض التفاصيل
+                    </a>
                 </div>
             </div>
-            <div class="row mt-5 show-scroll">
-            </div>
         </div>
+        <b-modal id="modal-lg" class="text-right" size="lg" title="اسم الخدمة">
+            يييي
+        </b-modal>
     </div>
 </template>
 
 <script>
+    import { mapMutations, mapActions } from 'vuex'
+
     export default {
-        
-    }
+        methods: {
+            ...mapActions({
+                fetchServices: 'services/fetchServices',
+                clickedService: 'services/clickedService'
+            })
+        },
+        computed: {
+            services() {
+                return this.$store.state.services.services;
+            },
+        },
+        created() {
+            this.fetchServices();
+        },
+    };
 </script>
 
 <style lang="scss" scoped>

@@ -10,7 +10,6 @@
       <SupportCategories :categories="categories" />
       <SupportContact />
     </div>
-    <!-- <button @click="dd()">dd</button> -->
   </div>
 </template>
 
@@ -44,13 +43,7 @@ export default {
       fetchCategories: "support/categories/fetchCategories",
       fetchQuestions: "support/questions/fetchQuestions",
       search: "support/questions/search"
-    }),
-    getId(category_id) {
-      this.resault = category_id;
-    },
-    dd() {
-      console.log(this.questions);
-    },
+    })
   },
 };
 </script>
