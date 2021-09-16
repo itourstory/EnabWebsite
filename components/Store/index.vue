@@ -14,13 +14,9 @@
             </b-col>
             <b-col sm="6">
                 <!-- Modal button -->
-                <div class="text-light" v-b-modal.modal-1>
+                <div class="text-light">
                     <i class="fas fa-question-circle"></i> ما هو نظام النقاط 
                 </div>
-                <!-- Modal body -->
-                <b-modal id="modal-1" title="نظام النقاط">
-                    <p class="my-4">شرح نظام النقاط</p>
-                </b-modal>
             </b-col>
         </b-row>
         <div class="row pt-0">

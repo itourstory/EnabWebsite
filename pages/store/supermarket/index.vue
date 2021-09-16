@@ -14,9 +14,11 @@
             </b-col>
             <b-col sm="6">
                 <!-- Modal button -->
-                <div class="text-light" v-b-modal.modal-1>
+                <nuxt-link to="pointsdecription" >
+                <div class="text-light">
                     <i class="fas fa-question-circle"></i> ما هو نظام النقاط 
                 </div>
+                </nuxt-link>>
                 <!-- Modal body -->
                 <b-modal id="modal-1" title="نظام النقاط">
                     <p class="my-4">شرح نظام النقاط</p>

@@ -10,6 +10,9 @@
                     <a class="btn btn-secondary mt-3 hover-scale-110" v-b-modal="serviceId(service.id)" variant="primary">
                         عرض التفاصيل
                     </a>
+                    <!-- <nuxt-link class="btn btn-secondary mt-3 hover-scale-110" v-b-modal="serviceId(service.id)" variant="primary">
+                        عرض التفاصيل
+                    </nuxt-link> -->
                 </div>
                 <b-modal :id="'modal'+ service.id" class="text-right" size="lg" :title="service.title">
                     <p class="text-right">
@@ -26,7 +29,6 @@
         props: [
             "searchText",
             "services",
-            "resault",
         ],
         methods:{
             serviceId(id){
