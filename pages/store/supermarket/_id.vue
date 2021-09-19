@@ -1,7 +1,9 @@
 <template>
     <div>
-        <h1 class="text-light">hii {{this.$route.params.id}}</h1>
-        <h1 class="text-light">hii {{services}}</h1>
+        <StoreSupermarketInfo
+        :service="service" />
+        {{service}}
+        {{this.$route.params.id}}
     </div>
 </template>
 
@@ -15,17 +17,25 @@
         methods: {
             ...mapActions({
                 fetchServices: 'services/fetchServices',
-                clickedService: 'services/clickedService'
+                clickedService: 'services/clickedService',
             })
         },
         computed:{
-            services(){
-                return this.$store.state.services.services.find(service => service.id === this.$route.params.id);
+            service(){
+                this.$store.dispatch('services/clickedService',this.$route.params.id)
+                return this.$store.state.services.clickedService
             }
         },
         created() {
             this.fetchServices();
-        },
+            var _id = this.$route.params.id;
+            var regex = /^([0-9]{2,2})([0-9]{2,2})([0-9]{8,8})$/;
+            var contents = _id.match(regex);
+
+            this.type = contents[1];
+            this.subtype = contents[2];
+            this.id = contents[3];
+                },
     }
 </script>
 

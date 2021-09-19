@@ -13,44 +13,39 @@
                 <b-badge pill variant="primary" class="m-3">عدد الخدمات {{services.length}}</b-badge>
             </b-col>
             <b-col sm="6">
-                <!-- Modal button -->
-                <nuxt-link to="pointsdecription" >
                 <div class="text-light">
-                    <i class="fas fa-question-circle"></i> ما هو نظام النقاط 
+                    <nuxt-link to="pointsdecription" >
+                        <i class="fas fa-question-circle"></i> ما هو نظام النقاط 
+                    </nuxt-link>
                 </div>
-                </nuxt-link>>
-                <!-- Modal body -->
-                <b-modal id="modal-1" title="نظام النقاط">
-                    <p class="my-4">شرح نظام النقاط</p>
-                </b-modal>
             </b-col>
         </b-row>
         <StoreSearchResault
             :services="services"
+            :searchText="searchText"
         />
     </div>
 </template>
 
 <script>
-    import { mapMutations, mapActions } from 'vuex'
+import { mapMutations, mapGetters, mapActions, mapState } from "vuex";
 
     export default {
         methods: {
             ...mapActions({
                 fetchServices: 'services/fetchServices',
-                clickedService: 'services/clickedService'
+                search: "services/search"
             })
         },
         computed: {
-            services(){
-                console.log(this.$store.state.services.services)
-                return this.$store.state.services.services;
-            },
             searchText() {
                 let search = this.$store.state.services.search.searchText;
                 this.$store.dispatch('services/search', search)
                 return search;
             },
+            services(){
+                return this.$store.state.services.searchResault;
+            }
         },  
         created() {
             this.fetchServices();

@@ -22,7 +22,7 @@ import { mapMutations } from 'vuex'
         methods: {
             ...mapMutations({
                 storeSearch: 'services/search/setSearchText'
-            }),
+            })
         },
         watch: {
             searchText(){
