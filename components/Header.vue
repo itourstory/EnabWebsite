@@ -26,6 +26,12 @@
             الخدمات
           </b-nav-item> -->
           <b-nav-item
+            to="/store/supermarket"
+            :class="{ active: $nuxt.$route.path === '/store/supermarket' }"
+          >
+            متجر الخدمات
+          </b-nav-item>
+          <b-nav-item
             to="/services/subscribe"
             :class="{ active: $nuxt.$route.path === '/services/subscribe' }"
           >

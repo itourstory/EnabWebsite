@@ -1,6 +1,12 @@
 <template>
     <div>
-        <b-form-input type="search" class="r-3" placeholder="اكتب اسم الخدمة" v-model="searchText" ></b-form-input>
+        <b-form-input 
+            type="search" 
+            class="r-3" 
+            placeholder="اكتب اسم الخدمة"
+            v-model="searchText"
+        >
+        </b-form-input>
     </div>
 </template>
 
@@ -16,7 +22,7 @@ import { mapMutations } from 'vuex'
         methods: {
             ...mapMutations({
                 storeSearch: 'services/search/setSearchText'
-            }),
+            })
         },
         watch: {
             searchText(){

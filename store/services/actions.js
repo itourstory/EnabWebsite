@@ -11,25 +11,17 @@ export default {
     },
 
     async clickedService({commit , state}, id){
-        let service = state.services.services.find(x=>x.id==id);
+        let service = state.services.find(x=>x.id==id);
         commit('set_clicked', service); // Send to Mutations
     },
 
-    async search({commit}, text){
-        var services = '';
-        await this.$axios
-            .get('/services')
-            .then(async (response) => {
-                services = response.data;
-            }).catch(error => {
-                throw new Error(`${error}`);
+    async search({commit , state}, text){
+        console.log(text)
+        let services = state.services;
+        if(text)
+            services = services.filter(item => {
+                    return item.title.includes(text)
             })
-
-        if (text)
-        services = services.filter(item => {
-                return item.title.includes(text)
-        })
-        
-        commit('set_services', services); // Send to Mutations
+        commit('set_resault', services); // Send to Mutations
     }
 }

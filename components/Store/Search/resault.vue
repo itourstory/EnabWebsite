@@ -7,26 +7,21 @@
                     <h4 class="text-light mt-3">{{service.title}}</h4>
                     <h6 v-if="service.points == 0" class="text-light mt-3">مجانا 🤩</h6>
                     <h6 v-else class="text-light mt-3">{{service.points}} نقطة</h6>
-                    <a class="btn btn-secondary mt-3 hover-scale-110" v-b-modal="serviceId(service.id)" variant="primary">
+                    <nuxt-link :to="'/store/supermarket/'+ service.id" class="btn btn-secondary mt-3 hover-scale-110">
                         عرض التفاصيل
-                    </a>
+                    </nuxt-link>
                 </div>
-                <b-modal :id="'modal'+ service.id" class="text-right" size="lg" :title="service.title">
-                    <p class="text-right">
-                        {{service.subtitle}}
-                    </p>
-                </b-modal>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    import { mapMutations, mapGetters, mapActions, mapState } from "vuex";
     export default {
         props: [
             "searchText",
             "services",
-            "resault",
         ],
         methods:{
             serviceId(id){
