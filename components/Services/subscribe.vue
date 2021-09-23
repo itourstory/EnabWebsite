@@ -13,6 +13,9 @@
                             </div>
                             <!-- Roles -->
                             <div class="col-lg-6">
+                                <img src="/images/handsShake.svg" alt="handsShake" width="300px">
+                            </div>
+                            <!-- <div class="col-lg-6">
                                 <div class="accordion" role="tablist">
                                     <b-card no-body class="mb-1">
                                     <b-card-header header-tag="header" class="p-1" role="tab">
@@ -47,7 +50,7 @@
                                     </b-collapse>
                                     </b-card>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="row row-grid align-items-center">
                             <div class="col-lg-12 ml-auto mr-auto mr-lg-0">
