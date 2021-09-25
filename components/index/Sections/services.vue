@@ -33,7 +33,7 @@
                     <div class="card mb-2 hover-translate-y-n10">
                         <nuxt-link to="/">
                             <div class="d-flex p-4">
-                                <div class="pl-3 text-primary text-light">
+                                <div class="pl-3 text-primary text-light mb-4">
                                     <h3 class="text-light">قريبا...</h3>
                                     <p>
                                         حبة عنب تحمل خدمة جديدة قريبا..

@@ -6,10 +6,16 @@
                     <div class="col px-0">
                         <div class="row row-grid align-items-center">
                             <!-- Heading -->
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 text-right">
                                 <h1 class="display-4 text-white mb-4 text-right">
                                     احصل على النظام الان <strong class="text-warning"> مجانا </strong>
                                 </h1>
+                                <p class="lead text-right text-md-right text-muted">
+                                    <b-card-text>اقرأ <nuxt-link to="/privacy" class="text-primary">سياسة الخصوصية وبنود الخدمة</nuxt-link> الخاصة بنا ثم املئ الحقول التالية بالمعلومات * يجب التأكد من صحة معلوماتك اولا </b-card-text>
+                                </p>
+                                <p class="lead text-right text-md-right text-muted">
+                                    <b-card-text>سوف يصل لك على بريدك الخاص البريد الالكتروني وكلمة السر , قم بتحميل النظام من الموقع وقم بتسجيل الدخول</b-card-text>
+                                </p>
                             </div>
                             <!-- Roles -->
                             <div class="col-lg-6">
