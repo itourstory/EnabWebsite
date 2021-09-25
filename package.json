@@ -27,6 +27,7 @@
     "vuejs-dialog": "^1.4.2"
   },
   "devDependencies": {
-    "@nuxtjs/fontawesome": "^1.1.2"
+    "@nuxtjs/fontawesome": "^1.1.2",
+    "@nuxtjs/google-analytics": "^2.4.0"
   }
 }

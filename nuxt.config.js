@@ -84,6 +84,16 @@ export default {
   build: {
   },
 
+  //Google analytics
+  googleAnalytics: {
+    id: 'G-B3Z9TTH4LR',
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: 'G-B3Z9TTH4LR',
+    }
+  },
+
   styleResources: {
     scss: [
         '~/assets/scss/variables.scss',
