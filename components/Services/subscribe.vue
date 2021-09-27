@@ -21,42 +21,6 @@
                             <div class="col-lg-6">
                                 <img src="/images/handsShake.svg" alt="handsShake" width="300px">
                             </div>
-                            <!-- <div class="col-lg-6">
-                                <div class="accordion" role="tablist">
-                                    <b-card no-body class="mb-1">
-                                    <b-card-header header-tag="header" class="p-1" role="tab">
-                                        <b-button block v-b-toggle.accordion-1 variant="info">الخطوة الاولى</b-button>
-                                    </b-card-header>
-                                    <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
-                                        <b-card-body class="text-right text-light">
-                                            <b-card-text>اقرأ <nuxt-link to="/privacy">سياسة الخصوصية وبنود الخدمة</nuxt-link> الخاصة بنا ثم املئ الحقول التالية بالمعلومات * يجب التأكد من صحة معلوماتك اولا </b-card-text>
-                                        </b-card-body>
-                                    </b-collapse>
-                                    </b-card>
-
-                                    <b-card no-body class="mb-1">
-                                    <b-card-header header-tag="header" class="p-1" role="tab">
-                                        <b-button block v-b-toggle.accordion-2 variant="info">الخطوة الثانية</b-button>
-                                    </b-card-header>
-                                    <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-                                        <b-card-body class="text-right text-light">
-                                            <b-card-text><i class="fas fa-download ml-3"></i>حمل النظام وقم بتنصيبه وبعدها يمكنك تسجيل الدخول عن طريق المعرف و كلمة المرور الخاصة بك</b-card-text>
-                                        </b-card-body>
-                                    </b-collapse>
-                                    </b-card>
-
-                                    <b-card no-body class="mb-1">
-                                    <b-card-header header-tag="header" class="p-1" role="tab">
-                                        <b-button block v-b-toggle.accordion-3 variant="info">الخطوة الثالثة</b-button>
-                                    </b-card-header>
-                                    <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-                                        <b-card-body class="text-right text-light">
-                                            <b-card-text><i class="fas fa-download ml-3"></i>حمل النظام وقم بتنصيبه وبعدها يمكنك تسجيل الدخول عن طريق المعرف و كلمة المرور الخاصة بك</b-card-text>
-                                        </b-card-body>
-                                    </b-collapse>
-                                    </b-card>
-                                </div>
-                            </div> -->
                         </div>
                         <div class="row row-grid align-items-center">
                             <div class="col-lg-12 ml-auto mr-auto mr-lg-0">
