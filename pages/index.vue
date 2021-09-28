@@ -2,9 +2,8 @@
   <div>
     <IndexSectionsIntroduction />
     <IndexSectionsFeatures />
-    <IndexSectionsSupermarket />
+    <IndexSectionsBusinesses />
     <IndexSectionsServiceStore />
-    <IndexSectionsServices />
   </div>
 </template>
 

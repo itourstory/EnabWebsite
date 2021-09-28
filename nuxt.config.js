@@ -50,6 +50,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/google-analytics',
   ],
   
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -82,6 +83,16 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  //Google analytics
+  googleAnalytics: {
+    id: 'G-B3Z9TTH4LR',
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: 'G-B3Z9TTH4LR',
+    }
   },
 
   styleResources: {
