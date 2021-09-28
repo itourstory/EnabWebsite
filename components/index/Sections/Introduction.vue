@@ -4,7 +4,7 @@
             <!-- Main Section -->
             <div v-if="section==''">
                 <h1 class="display-4 text-white font-weight-bolder mb-4">
-                    عنب
+                    نظام عنب
                 </h1>
                 <p class="lead text-white opacity-8">
                     كل شي يساعدك بإدارة عملك وتطويره بعنكود واحد حلو، بسيط ومجاني

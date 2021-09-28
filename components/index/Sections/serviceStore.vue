@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="card col-lg-12 mx-auto mb-2 hover-translate-y-n10">
+        <div class="card col-lg-12 mx-auto mb-2">
             <div class="d-flex p-4">
                 <div class="pl-3 mx-auto text-primary text-light text-center">
                     <h1 class="h1 text-light">متجر الخدمات</h1>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ServicesSupermarket />
+        <BusinessesSupermarket />
     </div>
 </template>
 

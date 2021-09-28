@@ -3,10 +3,10 @@
     <b-navbar toggleable="lg" type="light">
       <b-navbar-brand href="#">
         <nuxt-link to="/" class="active brand-link position-relative">
-          <b>نظام عنب</b>
+          <img alt="logo" src="/images/logo.png" style="height:80px;">
           <small
             class="badge badge-secondary text-sm position-absolute"
-            style="top: -15px; right: 0"
+            style="top: -30px; right: 0"
             >تجريبي</small
           >
         </nuxt-link>
@@ -19,12 +19,6 @@
           <b-nav-item to="/" :class="{ active: $nuxt.$route.path === '/' }">
             الصفحة الرئيسية
           </b-nav-item>
-          <!-- <b-nav-item
-            to="/services"
-            :class="{ active: $nuxt.$route.path === '/services' }"
-          >
-            الخدمات
-          </b-nav-item> -->
           <b-nav-item
             to="/store/supermarket"
             :class="{ active: $nuxt.$route.path === '/store/supermarket' }"
@@ -32,8 +26,8 @@
             متجر الخدمات
           </b-nav-item>
           <b-nav-item
-            to="/services/subscribe"
-            :class="{ active: $nuxt.$route.path === '/services/subscribe' }"
+            to="/businesses/subscribe"
+            :class="{ active: $nuxt.$route.path === '/businesses/subscribe' }"
           >
             طلب اشتراك
           </b-nav-item>
