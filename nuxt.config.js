@@ -50,6 +50,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/google-analytics',
   ],
   
   // Modules: https://go.nuxtjs.dev/config-modules
