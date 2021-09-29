@@ -3,22 +3,22 @@
         <div class="feature col-md-3 col-sm-12 d-flex justify-content-center flex-column text-center" >
             <i class="fas fa-signal fa-3x text-light"></i>
             <h4 class="text-light mt-3">مع أو بدون أنترنت</h4>
-            <span class="text-muted">موجود أو ما موجود لا يهمك، عنب مستمر بتسهيل إدارة وتنظيم عملك خلال أوقات انقطاع أو ضعف الإنترنت</span>
+            <span class="text-muted mx-3">موجود أو ما موجود لا يهمك، عنب مستمر بتسهيل إدارة وتنظيم عملك خلال أوقات انقطاع أو ضعف الإنترنت</span>
         </div>
         <div class="feature col-md-3 col-sm-12 d-flex justify-content-center flex-column text-center">
             <i class="fas fa-box-open fa-3x text-light"></i>
             <h4 class="text-light mt-3">متعدد الخدمات</h4>
-            <span class="text-muted">عنب يقدم لك مجموعة كبيرة من الخدمات مهمتها مساعدتك بإدارة العمل و توفير الوقت والمجهود والمال...وتخليصك من الأعمال الروتينة</span>
+            <span class="text-muted mx-3">عنب يقدم لك مجموعة كبيرة من الخدمات مهمتها مساعدتك بإدارة العمل و توفير الوقت والمجهود والمال...وتخليصك من الأعمال الروتينة</span>
         </div>
         <div class="feature col-md-3 col-sm-12 d-flex justify-content-center flex-column text-center">
             <i class="fas fa-bolt fa-3x text-light"></i>
             <h4 class="text-light mt-3">سريع ومجاني</h4>
-            <span class="text-muted">الرزق يحتاج خُفية.. وسرعة عنب كفيلة بزيادة مبيعاتك وتخليصك من مشاكل تأخر الاستجابة وطوابير الزبائن وكل هذا يقدمه إلك عنب مجانا</span>
+            <span class="text-muted mx-3">الرزق يحتاج خُفية.. وسرعة عنب كفيلة بزيادة مبيعاتك وتخليصك من مشاكل تأخر الاستجابة وطوابير الزبائن وكل هذا يقدمه إلك عنب مجانا</span>
         </div>
         <div class="feature col-md-3 col-sm-12 d-flex justify-content-center flex-column text-center">
             <i class="fas fa-cash-register fa-3x text-light"></i>
             <h4 class="text-light mt-3">انظمة بيع مدمجة</h4>
-            <span class="text-muted">عنب يجمع بين أنظمة الإدارة وأنظمة الكاشير بنظام واحد يوفر فلوسك ويرفع ارباحك</span>
+            <span class="text-muted mx-3">عنب يجمع بين أنظمة الإدارة وأنظمة الكاشير بنظام واحد يوفر فلوسك ويرفع ارباحك</span>
         </div>
     </div>
 </template>

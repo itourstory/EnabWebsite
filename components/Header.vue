@@ -3,7 +3,7 @@
     <b-navbar toggleable="lg" type="light">
       <b-navbar-brand href="#">
         <nuxt-link to="/" class="active brand-link position-relative">
-          <img alt="logo" src="/images/logo.png" style="height:80px;">
+          <img alt="logo" src="/images/logoW.png" style="height:80px;">
           <small
             class="badge badge-secondary text-sm position-absolute"
             style="top: -30px; right: 0"

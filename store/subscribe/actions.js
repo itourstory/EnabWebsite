@@ -1,9 +1,12 @@
 export default {
-    async subscribe({commit, dispatch}) {
+    async subscribe({state, commit, dispatch}, form) {
         await this.$axios
-            .post('/subscription/request')
-            .catch(error => {
-                throw new Error(`${error}`);
+            .post('/subscription/request', form)
+            .then((response) => {
+                this.$toast.success("تمت الإضافة بنجاح !")
+            })
+            .catch((error) => {
+                this.$toast.error(`${error}`);
             })
     },
 }

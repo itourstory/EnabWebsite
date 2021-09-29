@@ -6,9 +6,8 @@
 </template>
 
 <script>
-import businesses from '~/components/index/Sections/businesses.vue'
     export default {
-  components: { businesses },
+        
     }
 </script>
 

@@ -61,7 +61,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     
-    '@nuxtjs/auth-next'
+    '@nuxtjs/auth-next',
+    '@nuxtjs/toast',
 
   ],
   auth: {},
@@ -99,5 +100,19 @@ export default {
     scss: [
         '~/assets/scss/variables.scss',
     ]
-  }
+  },
+
+  //Toast details
+  toast: {
+    position: 'top-center',
+    register: [ // Register custom toasts
+      {
+        name: 'my-error',
+        message: 'Oops...Something went wrong',
+        options: {
+          type: 'error'
+        }
+      }
+    ]
+}
 }
