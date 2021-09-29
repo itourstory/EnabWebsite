@@ -80,7 +80,7 @@
                 c5.679-24.395,25.372-41.877,48.586-45.918c-31.354-5.403-61.858,14.532-69.164,45.918c-7.577,32.552,12.668,65.083,45.22,72.661
                 c8.157,1.899,16.312,2.049,24.074,0.698C136.533,381.161,135.368,380.935,134.202,380.664z"
       />
-      <nuxt-link to="/services/supermarket">
+      <nuxt-link to="/businesses/supermarket">
         <circle class="supermarket shake" v-b-popover.hover.topleft="'اضغط لعرض الخدمة 😉'" cx="233.25" cy="181.426" r="60.52" @click="supermarket()" @mouseover="services_state('supermarket')" @mouseout="services_state('')"/>
         <path
           style="fill: #462e7a"

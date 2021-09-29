@@ -67,7 +67,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="https://www.instagram.com/enab_io"
+                href="https://www.instagram.com/enab_app/"
                 target="_blank"
               >
                 <i class="fab fa-instagram"></i>
