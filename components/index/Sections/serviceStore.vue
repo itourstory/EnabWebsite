@@ -4,7 +4,7 @@
             <div class="d-flex p-4">
                 <div class="pl-3 mx-auto text-primary text-light text-center">
                     <h1 class="h1 text-light">متجر الخدمات</h1>
-                    <h3 class="h3 text-light">يمكنك الدخول الى متجر الخدمات عن طريق الضغضط على باب المتجر</h3>
+                    <h3 class="h3 text-light">يمكنك الدخول الى متجر الخدمات عن طريق الضغط على باب المتجر</h3>
                     <p>
                         يمكنك شراء العديد من الخدمات التي تسهل عليك عملك , هنلك ايضا خدمات مجانية
                     </p>
@@ -12,7 +12,6 @@
             </div>
             <div>
                 <IndexUtilitiesStore />
-                <!-- <img src="/images/store.svg" class="img-fluid img-center" style="width: 900px;" /> -->
             </div>
         </div>
     </div>
