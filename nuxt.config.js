@@ -95,6 +95,7 @@ export default {
       id: 'G-B3Z9TTH4LR',
     }
   },
+  
 
   styleResources: {
     scss: [
